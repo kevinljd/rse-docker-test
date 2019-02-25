@@ -1,39 +1,31 @@
 import React, { Component } from "react";
-import styled  from 'styled-components'
+// import styled  from 'styled-components';
+import './navbar.css';
+import mainLogo from '../img/home/img/logo.png';
 
 class NavBar extends Component {
   render() {
     return (
-      <div>
-        <nav>
-          <links>Home</links>
-          <links>About Us</links>
-          <links>Partners</links>
-          <links>Programs</links>
-          <links>Our Teams</links>
-          <links>Contact us</links>
-          <links style={{float:'right'}}>Login</links>
-          <links style={{float:'right'}}>Sign Up</links>
-        </nav>
-      </div>
+      <nav>
+        <img src={mainLogo} alt={'RSE Logo'}/>
+        <ul>
+          {/*<li><img src={mainLogo} alt={'RSE Logo'}/></li>*/}
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Partners</li>
+          <li>Programs</li>
+          <li>Our Teams</li>
+          <li>Contact us</li>
+          <li className={'two'}>Login</li>
+          <li className={'two'}>Sign Up</li>
+        </ul>
+      </nav>
     )
   }
 }
 
-const nav = styled.ul`
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-`;
 
-const links = styled.li`
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-`;
+
+
 
 export default NavBar
