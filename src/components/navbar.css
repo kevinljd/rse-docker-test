@@ -23,7 +23,7 @@ ul {
     overflow: hidden;
     background-color: #333333;
     font-family: 'Hind', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.2rem;
 }
 
 
@@ -43,7 +43,7 @@ li:first-child {
 .two {
     float: right;
     border: 1px solid white;
-    border-radius: 17%;
+    border-radius: 200px;
     padding: 7px 15px;
     margin: 7px 10px;
 }
