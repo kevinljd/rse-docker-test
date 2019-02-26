@@ -7,8 +7,8 @@ class Home extends Component {
   render() {
     return (
       <body>
+        <NavBar/>
         <header>
-          <NavBar/>
           <div>
             <h1>Bridging the gaps between<br/>Classrooms and Workplaces</h1>
             <a className={'scroll-to-start'} href={'#'}>Learn More</a>
