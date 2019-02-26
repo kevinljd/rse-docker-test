@@ -20,7 +20,15 @@ body {
     background-position: center;
     height: 100vh;
     text-align: center;
-    text-color: white;
+}
+
+.theProblem {
+    background-image: url(../img/home/img/Problemimage.png);
+    transform: rotate(180deg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
 }
 
 .mainHeading {

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+
 body {
     margin: 0;
 }
@@ -22,7 +24,7 @@ ul {
     padding: 10px;
     overflow: hidden;
     background-color: #333333;
-    font-family: 'Hind', sans-serif;
+    font-family: 'Roboto', 'Hind', sans-serif;
     font-size: 1.2rem;
 }
 
