@@ -19,7 +19,7 @@ class Contact extends Component {
     return (
       <body>
         <NavBar/>
-        
+
         <ImageBackground source = {require('../img/contact-us/img/RSEcrop.jpg')} style={{height:800}}>
           <Text style = {{marginTop: 400}}>
             <ImageTextBold>Got any further enquiries?</ImageTextBold>
@@ -44,7 +44,7 @@ class Contact extends Component {
                 <Link>program@realskillseducation.com</Link>
               </View>
               <View style = {containerStyle.container}>
-                {<img src = {FBLogo} alt = "FBLogo" width = {90} height = {90} paddingRight= {50}></img>}
+                {<img src = {FBLogo} alt = "FBLogo" width = {100} height = {100} paddingRight= {50}></img>}
                 <Enquiries>For General Enquiries</Enquiries>
                 <ReachOut>Send us a message</ReachOut>
                 <Link>Facebook</Link>
@@ -60,15 +60,6 @@ class Contact extends Component {
 
 export default Contact
 
-// const Title = styled.div `
-//   font-family: 'typeface-montserrat';
-//   font-weight: 'bold';
-//   font-color: 'ffffff';
-//   fontSize: 70;
-//   textAlign: 'center';
-//   marginTop: 400;
-//   color: white;
-// `
 const containerStyle = StyleSheet.create({
   container: {
     alignItems: 'center',
@@ -80,6 +71,17 @@ const containerStyle = StyleSheet.create({
     justifyContent: 'space-evenly',
   }
 }); 
+
+const Line = ({ color }) => (
+  <hr
+      style={{
+          color: '#eeeeee',
+          backgroundColor: '#eeeeee',
+          height: 2,
+          width: 1200,
+      }}
+  />
+);
 
 const ImageTextBold = styled.div`
   font-family: Montserrat;
@@ -94,7 +96,6 @@ const ImageText = styled.div`
   text-align: center;
   color: white;
 `
-
 const ContactUs= styled.div`
   font-family: 'Roboto';
   font-size: 3em;
@@ -102,7 +103,6 @@ const ContactUs= styled.div`
   color: '#3e3e3e';
   padding: 2rem;
 `
-
 const Enquiries= styled.div`
   font-family: 'Roboto';
   font-size: 1.5em;
@@ -129,14 +129,4 @@ const Link= styled.div`
 const Padding= styled.div`
   padding: 10rem;
 `
-const Line = ({ color }) => (
-  <hr
-      style={{
-          color: '#eeeeee',
-          backgroundColor: '#eeeeee',
-          height: 2,
-          width: 1200,
-      }}
-  />
-);
 
