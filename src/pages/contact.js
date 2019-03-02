@@ -30,7 +30,7 @@ class Contact extends Component {
 
           <ContactUs>Contact Us</ContactUs>
           <Line/>
-           
+           <LinePadding/>
            <Container>
             <Row>
               <Col sm={4} align="center">
@@ -117,6 +117,10 @@ const Link= styled.div`
   color: #a1a1a1;
 
 `
+const LinePadding= styled.div`
+  padding: 1rem;
+`
+
 const Padding= styled.div`
   padding: 10rem;
 `
