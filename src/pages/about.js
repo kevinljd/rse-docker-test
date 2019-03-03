@@ -2,16 +2,27 @@ import './about.css';
 import { Row, Col} from 'react-grid-system'
 import 'bootstrap/dist/css/bootstrap.css';
 import React, { Component } from 'react'
+//import { ImageBackground } from 'react-native'
+import NavBar from "../components/navbar"
+//import Footer from "../components/footer"
+
+import Gift from "../img/about/gift.png"
+import Inspire from "../img/about/Inspire.png"
+import Fail from "../img/about/Fail.png"
+import Icecream from "../img/about/ice-cream.png"
+//import Group from "../img/about/FullSizeRender_1.jpg"
 
 class About extends Component {
   render() {
     return (
-      <div className={"container"}>
-          <h1 className={"title"} style={{fontSize:'4em', padding:'2em 0em'}}>About Us</h1>
+      <body>
+        <NavBar/>
+        <h1 className={"imgtitle"} style={{fontSize:'4em', padding:'2em 0em'}}>About Us</h1>
+        <div className={"container"}>
           <h1 className={"title"} style={{borderBottom: '2px solid black'}}>Values</h1>
           <Row>
             <Col sm={3} className={"text"}>
-              <img src={"./gift.png"} alt={"present"} />
+              <img src={Gift} alt={"present"} width={200} height={200} className={"image"}/>
               <p><b style={{fontSize: '2em'}}>G</b> <br/>
                 <b>Give Before Taking</b> <br/><br/><br/>
                   Your true worth is determined by
@@ -32,7 +43,7 @@ class About extends Component {
                   Generosity builds success.</p>
             </Col>
             <Col sm={3} className={"text"}>
-              <img src={"./Inspire.png"} alt={"light bulb"}/>
+              <img src={Inspire} alt={"light bulb"} width={200} height={200} className={"image"}/>
               <p><b style={{fontSize: '2em'}}>I</b> <br/>
               <b>Inspire Others To Suceed</b> <br/><br/><br/>
               “Average people raise the bar on
@@ -53,7 +64,7 @@ class About extends Component {
               achieve their goals.</p>
             </Col>
             <Col sm={3} className={"text"}>
-              <img src={"Fail.png"} alt={"X"}/>
+              <img src={Fail} alt={"X"} width={200} height={200} className={"image"} />
               <p><b style={{fontSize: '2em'}}>F</b> <br/>
                 <b>Fail, But Only Once</b> <br/><br/><br/>
                   Instead of fearing failure,
@@ -67,7 +78,7 @@ class About extends Component {
                   you closer to success.</p>
             </Col>
             <Col sm={3} className={"text"}>
-              <img src={"ice-cream.png"} alt={"X"}/>
+              <img src={Icecream} alt={"icecream"} width={200} height={200} className={"image"}/>
               <p><b style={{fontSize: '2em'}}>T</b> <br/>
               <b>Try All The Flavours Of The Icecream</b> <br/><br/>
               Try as many things as you
@@ -80,8 +91,9 @@ class About extends Component {
               their passion. </p>
             </Col>
           </Row>
-      </div>
-
+        </div>
+        <h1 className={"title"} style={{borderBottom: '2px solid black'}}>Our Legacy</h1>
+      </body>
     )
   }
 }

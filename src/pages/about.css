@@ -1,11 +1,22 @@
 .title{
     color: #333333;
-    font-family: 'Hind', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 3em;
     text-align: center;
     padding: 1em 0em;
 }
 
+.imgtitle{
+  font-family: Montserrat;
+  font-size: 3em;
+  text-align: center;
+  color: white;
+}
+
 .text{
     text-align: center;
+}
+
+.image{
+    padding: 2em 2em;
 }
