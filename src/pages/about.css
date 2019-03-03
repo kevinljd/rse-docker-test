@@ -1,6 +1,11 @@
 .title{
     color: #333333;
     font-family: 'Hind', sans-serif;
-    font-size: 2em;
+    font-size: 3em;
+    text-align: center;
+    padding: 1em 0em;
+}
+
+.text{
     text-align: center;
 }
