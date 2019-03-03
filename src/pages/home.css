@@ -23,7 +23,7 @@ body {
 }
 
 .theProblem {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/home/img/Problemimage.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/home/img/Problemimage.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -31,26 +31,42 @@ body {
     transform: scale(1.35);
 }
 
+.theProblem .cols {
+    transform: scale(0.7);
+    text-align: center;
+}
+
+.theProblem .cols:before {
+    display: block;
+    content: " ";
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
 .mainHeading {
     display: inline-block;
     text-transform: uppercase;
     color: white;
-    margin-top: 100px;
+    margin-top: 30px;
     word-spacing: 4px;
     letter-spacing: 1px;
     font-weight: 300;
+
     /*border-bottom: 2px solid black;*/
 }
 
 .mainHeading:after {
     display: block;
     height: 1px;
-    background-color: black;
+    background-color: #171717;
     content: " ";
     width: 1000px;
     margin: 0 auto;
     margin-top: 30px;
+
 }
+
 
 .scroll-to-start {
     border-radius: 200px;
@@ -61,4 +77,19 @@ body {
     padding: 7px 15px;
     margin: 30px 600px;
 
+}
+
+.cols .logos{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-weight: 1000;
+    font-size: 1.5rem;
+}
+
+.theProblem .cols p {
+    margin-top: 30px;
 }
