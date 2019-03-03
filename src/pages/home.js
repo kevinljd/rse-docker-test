@@ -67,28 +67,26 @@ class Home extends Component {
             <Row className='cols'>
               <Col md={4} style={{color: '#535353'}}>
                 <img src={logo4} className='logos methodLogos'/>
-                <h3>Employer Expectations</h3>
+                <h3>Expose</h3>
                 <p>
-                  Expectations of employability are rapidly changing.
-                  With over 40% of degrees to be rendered useless within the next decade,
-                  the gap between the classroom and the workplace is widening!
+                  Students are exposed to unique mindsets,
+                  experiences and opportunities to make them rounded individuals and diversify their skillset.
                 </p>
               </Col>
               <Col md={4} style={{color: '#535353'}}>
-                <img src={logo5} className='logos'/>
-                <h3>Automation and Globalisation</h3>
+                <img src={logo5} className='logos methodLogos'/>
+                <h3>Upskill</h3>
                 <p>
-                  By 2030, automation and globalisation will revolutionise the way we work.
-                  Today, the industry desperately needs a more collaborative, soft- skill proficient and technologically
-                  literate workforce to cope with this inevitable reality.
+                  Practical & Simulation- based learning techniques are used to organically cultivate students
+                  with the essential skills necessary to navigate through the 21st century.
                 </p>
               </Col>
               <Col md={4} style={{color: '#535353'}}>
-                <img src={logo6} className='logos'/>
-                <h3>Education Model</h3>
+                <img src={logo6} className='logos methodLogos'/>
+                <h3>Connect</h3>
                 <p>
-                  The current education model cannot keep up with this rapid pace of change.
-                  Students are left unprepared for the future and are failing to create an impact on the STEM industry.
+                  Industry obtains access to a cohort of well rounded students where their fresh perspectives
+                  enable them to make a mark on the world.
                 </p>
               </Col>
             </Row>

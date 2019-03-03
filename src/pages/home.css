@@ -133,7 +133,16 @@ h3 {
     margin-top: 100px;
 }
 
-.logos .methodLogos {
+.methodLogos {
     background-color: #1380b8;
+    border-radius: 50%;
+
 }
 
+.method h3 {
+    color: white;
+}
+
+.method p {
+    color: white;
+}
