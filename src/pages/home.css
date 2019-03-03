@@ -1,8 +1,9 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
+
 
 body {
     background-color: #fff;
@@ -20,23 +21,23 @@ body {
     background-position: center;
     height: 100vh;
     text-align: center;
+    padding-bottom: 300px;
 }
 
 .theProblem {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/home/img/Problemimage.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/home/img/ProblemimageNew.png);
     background-size: cover;
     background-position: center;
-    height: 100vh;
     text-align: center;
-    transform: scale(1.35);
+    height: 100vh;
+    padding-top: 300px;
 }
 
 .theProblem .cols {
-    transform: scale(0.7);
     text-align: center;
 }
 
-.theProblem .cols:before {
+.theProblem .cols {
     display: block;
     content: " ";
     width: 1000px;
@@ -99,7 +100,7 @@ h3 {
 }
 
 .theSolution {
-    margin-top: 200px;
+    /* margin-top: 200px; */
 }
 
 .theSolution .mainHeading:after {
@@ -136,7 +137,7 @@ h3 {
 .methodLogos {
     background-color: #1380b8;
     border-radius: 50%;
-
+    padding: 1rem;
 }
 
 .method h3 {
