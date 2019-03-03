@@ -23,22 +23,33 @@ body {
 }
 
 .theProblem {
-    background-image: url(../img/home/img/Problemimage.png);
-    transform: rotate(180deg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/home/img/Problemimage.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
     text-align: center;
+    transform: scale(1.35);
 }
 
 .mainHeading {
     display: inline-block;
     text-transform: uppercase;
     color: white;
-    margin-top: 200px;
+    margin-top: 100px;
     word-spacing: 4px;
     letter-spacing: 1px;
     font-weight: 300;
+    /*border-bottom: 2px solid black;*/
+}
+
+.mainHeading:after {
+    display: block;
+    height: 1px;
+    background-color: black;
+    content: " ";
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 .scroll-to-start {
