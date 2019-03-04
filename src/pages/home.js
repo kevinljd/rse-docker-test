@@ -72,36 +72,42 @@ class Home extends Component {
               <MethodDiv>
                 <MethodLogo src={logo4}/>
               </MethodDiv>
-              <h1 className={'num'}>1</h1>
-              <h3 className={'subHeadings'}>Expose</h3>
-              <p>
-                Students are exposed to unique mindsets,
-                experiences and opportunities to make them rounded individuals and diversify their skillset.
-              </p>
+              <div className={'whiteBG'}>
+                <h1 className={'num'}>1</h1>
+                <h3 className={'subHeadings'}>Expose</h3>
+                <p>
+                  Students are exposed to unique mindsets,
+                  experiences and opportunities to make them rounded individuals and diversify their skillset.
+                </p>
+              </div>
             </Col>
             <Col md={4} style={{color: '#535353', padding: '50px'}}>
               {/* <img src={logo5} className='logos methodLogos'/> */}
               <MethodDiv>
                 <MethodLogo src={logo5}/>
               </MethodDiv>
-              <h1 className={'num'}>2</h1>
-              <h3 className={'subHeadings'}>Upskill</h3>
-              <p>
-                Practical & Simulation- based learning techniques are used to organically cultivate students
-                with the essential skills necessary to navigate through the 21st century.
-              </p>
+              <div className={'whiteBG'}>
+                <h1 className={'num'}>2</h1>
+                <h3 className={'subHeadings'}>Upskill</h3>
+                <p>
+                  Practical & Simulation- based learning techniques are used to organically cultivate students
+                  with the essential skills necessary to navigate through the 21st century.
+                </p>
+              </div>
             </Col>
             <Col md={4} style={{color: '#535353', padding: '50px'}}>
               {/* <img src={logo6} className='logos methodLogos'/> */}
               <MethodDiv>
                 <MethodLogo src={logo6}/>
               </MethodDiv>
-              <h1 className={'num'}>3</h1>
-              <h3 className={'subHeadings'}>Connect</h3>
-              <p>
-                Industry obtains access to a cohort of well rounded students where their fresh perspectives
-                enable them to make a mark on the world.
-              </p>
+              <div className={'whiteBG'}>
+                <h1 className={'num'}>3</h1>
+                <h3 className={'subHeadings'}>Connect</h3>
+                <p>
+                  Industry obtains access to a cohort of well rounded students where their fresh perspectives
+                  enable them to make a mark on the world.
+                </p>
+              </div>
             </Col>
           </Row>
         </div>
@@ -123,6 +129,9 @@ const MethodLogo = styled.img`
   margin: 0 auto;
   height: 6rem;
   width: auto;
+  position: relative;
+  z-index: 3;
+  top: -1px;
 `;
 const MethodDiv = styled.div`
   margin: auto;
@@ -131,6 +140,9 @@ const MethodDiv = styled.div`
   border-radius: 50%;
   background-color: #1380b8;
   padding: 1rem;
+  position: relative;
+  z-index: 2;
+  top: -30px;
 `;
 
 const ProblemDescription = styled.p`

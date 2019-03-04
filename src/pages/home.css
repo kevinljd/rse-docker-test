@@ -141,7 +141,7 @@ h3 {
 
 
 .method p {
-    color: white;
+    color: #727272;
     font-family: 'Roboto', 'Lato', 'Arial', sans-serif;
     padding: 0 50px;
 }
@@ -150,6 +150,7 @@ h3 {
     color: #1380b8;
     font-size: 3rem;
     display: block;
+    margin-top: 80px;
 
 }
 
@@ -157,4 +158,12 @@ h3 {
     color: #535353;
     font-family: 'Montserrat', 'Lato', 'Arial', sans-serif;
     font-size: 2rem;
+}
+
+.whiteBG {
+    background: white;
+    padding: 30px;
+    transform: translateY(-130px);
+    position: relative;
+    z-index: 0;
 }
