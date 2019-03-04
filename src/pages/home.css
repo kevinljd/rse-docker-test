@@ -139,10 +139,22 @@ h3 {
     padding: 1rem;
 }
 
-.method h3 {
-    color: white;
-}
 
 .method p {
     color: white;
+    font-family: 'Roboto', 'Lato', 'Arial', sans-serif;
+    padding: 0 50px;
+}
+
+.num {
+    color: #1380b8;
+    font-size: 3rem;
+    display: block;
+
+}
+
+.subHeadings {
+    color: #535353;
+    font-family: 'Montserrat', 'Lato', 'Arial', sans-serif;
+    font-size: 2rem;
 }

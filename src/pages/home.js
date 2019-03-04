@@ -72,7 +72,8 @@ class Home extends Component {
               <MethodDiv>
                 <MethodLogo src={logo4}/>
               </MethodDiv>
-              <h3>Expose</h3>
+              <h1 className={'num'}>1</h1>
+              <h3 className={'subHeadings'}>Expose</h3>
               <p>
                 Students are exposed to unique mindsets,
                 experiences and opportunities to make them rounded individuals and diversify their skillset.
@@ -83,7 +84,8 @@ class Home extends Component {
               <MethodDiv>
                 <MethodLogo src={logo5}/>
               </MethodDiv>
-              <h3>Upskill</h3>
+              <h1 className={'num'}>2</h1>
+              <h3 className={'subHeadings'}>Upskill</h3>
               <p>
                 Practical & Simulation- based learning techniques are used to organically cultivate students
                 with the essential skills necessary to navigate through the 21st century.
@@ -94,7 +96,8 @@ class Home extends Component {
               <MethodDiv>
                 <MethodLogo src={logo6}/>
               </MethodDiv>
-              <h3>Connect</h3>
+              <h1 className={'num'}>3</h1>
+              <h3 className={'subHeadings'}>Connect</h3>
               <p>
                 Industry obtains access to a cohort of well rounded students where their fresh perspectives
                 enable them to make a mark on the world.
@@ -148,4 +151,5 @@ const SolutionP = styled.p`
   padding: 0 7rem;
   color: #838383;
 `;
+
 
