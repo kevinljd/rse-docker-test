@@ -11,6 +11,7 @@ import logo3 from '../img/home/img/books2.png';
 import logo4 from '../img/home/img/lightbulb.png';
 import logo5 from '../img/home/img/man.png';
 import logo6 from '../img/home/img/networking-group.png';
+import partners from '../img/home/img/Logos.JPG';
 
 
 class Home extends Component {
@@ -19,13 +20,13 @@ class Home extends Component {
       <div>
         <NavBar/>
         <div className='header'>
-          <h1 className='mainHeading'>Bridging the gaps between<br/>Classrooms and Workplaces</h1>
+          <MainHeadings>Bridging the gaps between<br/>Classrooms and Workplaces</MainHeadings>
           <a className='scroll-to-start' href={'#'}>Learn More</a>
         </div>
         <div className='theProblem'>
-          <h1 className='mainHeading' style={{color: '#535353'}}>The Problem</h1>
+          <MainHeadings className='afterLine' style={{color: '#535353'}}>The Problem</MainHeadings>
           <Row>
-            <Col md={4} style={{color: '#535353'}}>
+            <Col md={4} style={{color: '#535353', padding: '50px'}}>
               <MethodLogo src={logo1}/>
               <h3>Employer Expectations</h3>
               <ProblemDescription>
@@ -34,7 +35,7 @@ class Home extends Component {
                 the gap between the classroom and the workplace is widening!
               </ProblemDescription>
             </Col>
-            <Col md={4} style={{color: '#535353'}}>
+            <Col md={4} style={{color: '#535353', padding: '50px'}}>
               <MethodLogo src={logo2}/>
               <h3>Automation and Globalisation</h3>
               <ProblemDescription>
@@ -43,7 +44,7 @@ class Home extends Component {
                  literate workforce to cope with this inevitable reality.
               </ProblemDescription>
             </Col>
-            <Col md={4} style={{color: '#535353'}}>
+            <Col md={4} style={{color: '#535353', padding: '50px'}}>
               <MethodLogo src={logo3}/>
               <h3>Education Model</h3>
               <ProblemDescription>
@@ -53,20 +54,20 @@ class Home extends Component {
             </Col>
           </Row>
         </div>
-        <div style={{backgroundColor: 'white'}}>
-          <h1 className='mainHeading' style={{color: '#535353'}}>The Solution</h1>
-          <p style={{color: '#838383'}}>
+        <div style={{backgroundColor: 'white', textAlign: 'center'}}>
+          <MainHeadings className='afterLine' style={{color: '#535353'}}>The Solution</MainHeadings>
+          <SolutionP>
             Real Skills Education is a student-run organisation that bridges the gap
             between classrooms and strong the workplace.
           <br/><br/>
             We embody the spirit of contemporary engineers, employing modern technologies and
             interactive teaching methods to develop dynamic and versatile STEM students, with tomorrow’s skills and knowledge.
-          </p>
+          </SolutionP>
         </div>
         <div className={'method'}>
           <h1 className='methodHeading' style={{color: 'white'}}>We achieve this through 3 steps</h1>
           <Row>
-            <Col md={4} style={{color: '#535353'}}>
+            <Col md={4} style={{color: '#535353', padding: '50px'}}>
               {/* <img src={logo4} className='logos methodLogos'/> */}
               <MethodDiv>
                 <MethodLogo src={logo4}/>
@@ -77,7 +78,7 @@ class Home extends Component {
                 experiences and opportunities to make them rounded individuals and diversify their skillset.
               </p>
             </Col>
-            <Col md={4} style={{color: '#535353'}}>
+            <Col md={4} style={{color: '#535353', padding: '50px'}}>
               {/* <img src={logo5} className='logos methodLogos'/> */}
               <MethodDiv>
                 <MethodLogo src={logo5}/>
@@ -88,7 +89,7 @@ class Home extends Component {
                 with the essential skills necessary to navigate through the 21st century.
               </p>
             </Col>
-            <Col md={4} style={{color: '#535353'}}>
+            <Col md={4} style={{color: '#535353', padding: '50px'}}>
               {/* <img src={logo6} className='logos methodLogos'/> */}
               <MethodDiv>
                 <MethodLogo src={logo6}/>
@@ -101,6 +102,10 @@ class Home extends Component {
             </Col>
           </Row>
         </div>
+        <div className={'partners'} style={{textAlign: 'center'}}>
+          <MainHeadings className='afterLine' style={{color: '#535353', marginTop: '0'}}>Partners</MainHeadings>
+          <img src={partners} style={{paddingBottom: '100px'}}/>
+        </div>
         <Footer/>
       </div>
     )
@@ -111,10 +116,11 @@ class Home extends Component {
 export default Home
 
 const MethodLogo = styled.img`
+  padding-top: 20px;
   margin: 0 auto;
   height: 6rem;
   width: auto;
-`
+`;
 const MethodDiv = styled.div`
   margin: auto;
   width: 9rem;
@@ -122,8 +128,24 @@ const MethodDiv = styled.div`
   border-radius: 50%;
   background-color: #1380b8;
   padding: 1rem;
-`
+`;
 
 const ProblemDescription = styled.p`
   padding: 2rem;
-`
+`;
+
+const MainHeadings = styled.h1`
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 150px;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  font-weight: 300;
+`;
+
+const SolutionP = styled.p`
+  padding: 0 7rem;
+  color: #838383;
+`;
+

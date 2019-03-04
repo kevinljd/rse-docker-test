@@ -30,7 +30,7 @@ body {
     background-position: center;
     text-align: center;
     height: 100vh;
-    padding-top: 300px;
+    padding-top: 10px;
 }
 
 .theProblem .cols {
@@ -61,12 +61,12 @@ body {
     margin-top: 40px;
 }
 
-.theProblem .mainHeading:after {
+.afterLine:after {
     display: block;
     height: 1px;
     background-color: #171717;
     content: " ";
-    width: 1000px;
+    width: 70rem;
     margin: 0 auto;
     margin-top: 30px;
 
@@ -123,15 +123,14 @@ h3 {
     background-image: url(../img/home/img/3_steps_image.png);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 135vh;
     text-align: center;
-    margin-top: 100px;
-    /*transform: scale(0.8);*/
 }
 
 .methodHeading {
     font-family: 'Roboto', 'Lato', 'Arial', sans-serif;
     margin-top: 100px;
+    padding-top: 190px;
 }
 
 .methodLogos {
