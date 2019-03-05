@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { ImageBackground, Text, View, StyleSheet } from 'react-native'
+// import { ImageBackground, Text, View, StyleSheet } from 'react-native'
 import { setConfiguration, Container, Row, Col } from 'react-grid-system'
 
 import NavBar from "../components/navbar"
