@@ -6,8 +6,9 @@ import { setConfiguration, Container, Row, Col } from 'react-grid-system'
 import NavBar from "../components/navbar"
 import Footer from "../components/footer"
 
+import Meeting from "../img/programs/img/DSC_0457.JPG" 
 import Audience from "../img/programs/img/DSE_6807.jpg"
-
+import VR from "../img/programs/img/Technical Workshops 2-49.jpg"
 require('typeface-montserrat')
 require('typeface-montserrat-alternates')
 require('typeface-roboto')
@@ -41,11 +42,13 @@ class Programs extends Component {
             <Container>
             <Row>
               <Col sm={4} align="center">
+              {<img src = {Meeting} alt = "Meeting" width = {475} height = {300}></img>}
               </Col>
               <Col sm={4} align="center">
                 {<img src = {Audience} alt = "Audience" width = {475} height = {300}></img>}
               </Col>
               <Col sm={4} align="center">
+              {<img src = {VR} alt = "VR" width = {475} height = {300}></img>}
               </Col>
             </Row>
           </Container>
@@ -58,7 +61,7 @@ class Programs extends Component {
 
 export default Programs
 
-setConfiguration({ defaultScreenClass: 'sm', containerWidths: 1140 , gutterWidth: 0});
+setConfiguration({ defaultScreenClass: 'lg', containerWidths: 1140 , gutterWidth: 0});
 
 const ProgramsFont = styled.div`
     font-family: Montserrat;
