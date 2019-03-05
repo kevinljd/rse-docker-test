@@ -29,23 +29,30 @@ class StemLeadersProgram extends Component {
 
            <Container>
             <Row>
-              <Col >
-                 <Montserrat>Students ourselves, we have been through this chicken and egg dilemma:
-                </Montserrat> 
-                <MontserratBold>'How do I get experience without experience?'</MontserratBold>
-                <Roboto>Wheter you are looking for</Roboto><RobotoBold>hand-on experience.</RobotoBold>
-                <Roboto>passionate about learning or simply wanting to reach your utmost potential, 
+              <Col sm={7} >
+                  <Montserrat>Students ourselves, we have been through this chicken and egg dilemma:
+                  </Montserrat> 
+                  <MontserratBold>'How do I get experience without experience?'</MontserratBold>
+                  <Roboto>Whether you are looking for</Roboto><RobotoBold>hand-on experience.</RobotoBold>
+                  <Roboto>passionate about learning or simply wanting to reach your utmost potential, 
                   the STEM Leaders Program is the perfect opportunity to take a step out of your comfort
                   zone and develop beyond your expectations.
                   opportunity 
+                  </Roboto>
+                  <TextPadding/>
+              </Col>
+            </Row>
+              <Col sm={7} >
+                <Montserrat>The STEM Leaders Program is a </Montserrat> 
+                <MontserratBold>premier STEM development program</MontserratBold>
+                <Roboto>designed by students for students. We provide you a platform to enhance
+                your existing skills to develop new skills in a challenging and supportive environment.
+                These opportunities are also accompanied by an</Roboto><RobotoBold>industry project</RobotoBold>
+                <Roboto>deisgned to encourage your ability to analyse, innovate, adapt and collaborate in a team
                 </Roboto>
-
+                <TextPadding/>
               </Col>
-              <Col sm={2} >
-              </Col>
-              </Row>
-
-              <Row>
+            <Row>
 
               </Row>
 
@@ -98,4 +105,7 @@ const RobotoBold = styled.div`
 `
 const ImagePadding= styled.div`
   padding: 1rem;
+`
+const TextPadding= styled.div`
+  padding: 3rem;
 `
