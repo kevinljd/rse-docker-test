@@ -10,12 +10,12 @@ class NavBar extends Component {
         <img src={mainLogo} alt={'RSE Logo'}/>
         <ul>
           {/*<li><img src={mainLogo} alt={'RSE Logo'}/></li>*/}
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Partners</li>
-          <li>Programs</li>
-          <li>Our Teams</li>
-          <li>Contact us</li>
+          <li><a href={'/'}>Home</a></li>
+          <li><a href={'/about'}>About Us</a></li>
+          <li><a href={'/partners'}>Partners</a></li>
+          <li><a href={'/programs'}>Programs</a></li>
+          <li><a href={'/team'}>Our Teams</a></li>
+          <li><a href={'/contact'}></a>Contact us</li>
           <li className={'two'}>Login</li>
           <li className={'two'}>Sign Up</li>
         </ul>
@@ -23,9 +23,6 @@ class NavBar extends Component {
     )
   }
 }
-
-
-
 
 
 export default NavBar

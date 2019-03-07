@@ -50,5 +50,10 @@ li:first-child {
     margin: 7px 10px;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 
 
