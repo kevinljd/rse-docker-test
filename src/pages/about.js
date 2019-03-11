@@ -328,6 +328,7 @@ class About extends Component {
 }
 export default About
 const Background = styled.div`
+  padding: 10rem 0;
   margin: 0 auto;
   height: 100vh;
   width: auto;
