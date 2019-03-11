@@ -28,21 +28,21 @@ class Programs extends Component {
                   <BigWord>RECRUITMENT</BigWord> 
                   <SmallWord>ENRICHMENT PROGRAM</SmallWord>
                 </ColorBox>
-                <img src = {Meeting} alt = "Meeting" width = '100%' height = 'auto'></img>
+                <img src = {Meeting} alt = "Meeting" width = '100%' height = 'auto'/>
               </Col>
               <Col style={{padding: '0'}} sm={4}>
                 <ColorBox bgColor='#FF9000'>
                   <BigWord>STEM LEADERS</BigWord> 
                   <SmallWord>PROGRAM</SmallWord>
                 </ColorBox>
-                <img src = {Audience} alt = "Audience" width = '100%' height = 'auto'></img>
+                <img src = {Audience} alt = "Audience" width = '100%' height = 'auto'/>
               </Col>
               <Col style={{padding: '0'}} sm={4}>
                 <ColorBox bgColor='#3e3e3e'>
                   <BigWord>FUTURE</BigWord> 
                   <SmallWord>TECHNOLOGIES PROGRAM</SmallWord>
                 </ColorBox>
-                <img src = {VR} alt = "VR" width = '100%' height = 'auto'></img>
+                <img src = {VR} alt = "VR" width = '100%' height = 'auto'/>
               </Col>
             </Row>
            
