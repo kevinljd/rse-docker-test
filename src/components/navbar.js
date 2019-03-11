@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom'
 // import styled  from 'styled-components';
 import './navbar.css';
 import mainLogo from '../img/home/img/logo.png';
@@ -10,12 +11,12 @@ class NavBar extends Component {
         <img src={mainLogo} alt={'RSE Logo'}/>
         <ul>
           {/*<li><img src={mainLogo} alt={'RSE Logo'}/></li>*/}
-          <li><a href={'/'}>Home</a></li>
-          <li><a href={'/about'}>About Us</a></li>
-          <li><a href={'/partners'}>Partners</a></li>
-          <li><a href={'/programs'}>Programs</a></li>
-          <li><a href={'/team'}>Our Teams</a></li>
-          <li><a href={'/contact'}></a>Contact us</li>
+          <li><Link to='/'>Home</Link></li>
+          <li><Link to='/about'>About Us</Link></li>
+          <li><Link to='/partners'>Partners</Link></li>
+          <li><Link to='/programs'>Programs</Link></li>
+          <li><Link to='/team'>Our Teams</Link></li>
+          <li><Link to='/contact'>Contact us</Link></li>
           <li className={'two'}>Login</li>
           <li className={'two'}>Sign Up</li>
         </ul>
