@@ -1,0 +1,30 @@
+.title{
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    padding: 1em 0em;
+}
+
+ .aboutus{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  text-align: center;
+}
+
+ .text{
+    text-align: center;
+    font-family:  'Roboto', sans-serif;
+}
+
+ .image{
+    padding: 2em 2em;       
+}
+
+ .icon{
+    border-radius: 50%;
+    width:12.5rem;
+    height: auto;
+    border: 5px solid white;
+}
