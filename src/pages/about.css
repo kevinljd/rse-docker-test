@@ -6,17 +6,24 @@
     padding: 1em 0em;
 }
 
-.imgtitle{
-  font-family: Montserrat;
+ .aboutus{
+  font-family: 'Montserrat', sans-serif;
   font-size: 3em;
   text-align: center;
-  color: white;
 }
 
-.text{
+ .text{
     text-align: center;
+    font-family:  'Roboto', sans-serif;
 }
 
-.image{
-    padding: 2em 2em;
+ .image{
+    padding: 2em 2em;       
+}
+
+ .icon{
+    border-radius: 50%;
+    width:10em;
+    height: auto;
+    border: 5px solid white;
 }
