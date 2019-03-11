@@ -1,7 +1,6 @@
 import './about.css';
 import styled from 'styled-components'
 import { Row, Col} from 'react-grid-system'
-import 'bootstrap/dist/css/bootstrap.css';
 import React, { Component } from 'react'
 import NavBar from "../components/navbar"
 import Gift from "../img/about/gift.png"

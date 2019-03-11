@@ -1,0 +1,15 @@
+.footer {
+    background-color: #333333;
+    width: auto;
+    height: 80px;
+    color: #a1a1a1;
+}
+
+.footer p {
+    font-family: 'Roboto', 'Hind', sans-serif;
+    font-size: 1rem;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+
