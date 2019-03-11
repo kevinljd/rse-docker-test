@@ -15,7 +15,7 @@ class NavBar extends Component {
           <li><a href={'/partners'}>Partners</a></li>
           <li><a href={'/programs'}>Programs</a></li>
           <li><a href={'/team'}>Our Teams</a></li>
-          <li><a href={'/contact'}></a>Contact us</li>
+          <li><a href={'/contact'}>Contact us</a></li>
           <li className={'two'}>Login</li>
           <li className={'two'}>Sign Up</li>
         </ul>
