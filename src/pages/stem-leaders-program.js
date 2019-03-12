@@ -1,14 +1,25 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { ImageBackground, Text } from 'react-native'
+import { ImageBackground, Text, Image, Dimensions, TouchableHighlight} from 'react-native'
 import { setConfiguration, Container, Row, Col } from 'react-grid-system'
 import NavBar from "../components/navbar"
 import Footer from "../components/footer"
+
+import Talk from "../img/programs/img/talk.JPG" 
+
+import PeopleStat from "../img/programs/img/stats1.png" 
+import PieChart from "../img/programs/img/stats2.png" 
 
 import BulbCog from "../img/programs/img/project-management-2.png" 
 import Molecule from "../img/programs/img/network-3 copy.png"
 import Wrench from "../img/programs/img/maintenance copy.png"
 import Presentation from "../img/programs/img/recruitment-2231 copy.png"
+
+import Lanyard from "../img/programs/img/lanyards.JPG" 
+import TableMeeting from "../img/programs/img/tablemeeting.JPG" 
+import TableSmiling from "../img/programs/img/tablesmiling.png" 
+import Lecture from "../img/programs/img/lecture.jpg" 
+
 
 import Mac from "../img/programs/img/recruitment321312 copy.png"
 import Briefcase from "../img/programs/img/portfolio-2 copy.png"
@@ -17,6 +28,8 @@ import Desk from "../img/programs/img/management copy.png"
 import Thinking from "../img/programs/img/thinking copy.png"
 import Brain from "../img/programs/img/brainstorm copy.png"
 
+
+import Logos from "../img/programs/img/partners/Logos.JPG"
 
 import Accenture from "../img/programs/img/partners/Accenture.png"
 import AECOM from "../img/programs/img/partners/AECOM.png"
@@ -66,7 +79,9 @@ class StemLeadersProgram extends Component {
                   zone and develop beyond your expectations.
                   opportunity 
                   </Text>
-
+              </Col>
+              <Col sm={4}>
+                
               </Col>
             </Row>
             <br/><br/><br/>
@@ -81,6 +96,11 @@ class StemLeadersProgram extends Component {
                 designed to encourage your ability to analyse, innovate, adapt and collaborate in a team
                 </Text>
               </Col>
+              <Col align='right' sm={1}>
+              </Col>
+              <Col align='right' sm={4}>
+                <img src = {Talk} alt = "Talk" width = '100%' height = 'auto'/>
+              </Col>
             </Row>
             <br/>      
           <Row>
@@ -91,17 +111,26 @@ class StemLeadersProgram extends Component {
           </Row>  
           <br/><br/>
           <Row>
-            <Col sm={3}>
-              One of three columns
+            <Col align='center' sm={3}>
+              <Text style ={{fontFamily: 'Montserrat', fontSize: 90,fontWeight: 'bold', color: '#007DBA'}}>10+</Text>
+              <br/>
+              <Text style ={{fontFamily: 'Montserrat', fontSize: 20, color: 'black'}}>Industry Partner for our STEM Leaders</Text>
             </Col>
-            <Col sm={3}>
-              One of three columns
+            <Col align='center' sm={3}>
+              <Text style ={{fontFamily: 'Montserrat', fontSize: 40,fontWeight: 'bold', color: 'black'}}>9 out of 10</Text>
+              <br/>
+              <img src = {PeopleStat} alt = "PeopleStat" width = '90%' height = 'auto'/>
+              <Text style ={{fontFamily: 'Montserrat', fontSize: 20, color: 'black'}}>would recommend to a friend</Text>
             </Col>
-            <Col sm={3}>
-              One of three columns
+            <Col align='center' sm={3}>
+              <img src = {PieChart} alt = "PieChart" width = '50%' height = 'auto'/>
+              <br/>
+              <Text style ={{fontFamily: 'Montserrat', fontSize: 20, color: 'black'}}>found immediate employment after program completion</Text>
             </Col>
-            <Col sm={3}>
-              One of three columns
+            <Col align='center' sm={3}>
+              <Text style ={{fontFamily: 'Montserrat', fontSize: 90,fontWeight: 'bold', color: '#007DBA'}}>300+</Text>
+              <br/>
+              <Text style ={{fontFamily: 'Montserrat', fontSize: 20, color: 'black'}}>Alumni network</Text>
             </Col>
           </Row>
           <br/>
@@ -119,10 +148,23 @@ class StemLeadersProgram extends Component {
             </Col>
           </Row>
 
-        <br/>
+        <br/><br/><br/>
             <Row>
-              <Col sm={4}>
-                One of three columns
+              <Col align='center' sm={4}>
+              <ImageBackground
+                style = {{
+                  borderRadius: 200/2,
+                  width: 200,
+                  height: 200,
+                  backgroundColor:'#d4f6ff',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+              >
+                <Text style ={{fontFamily: 'Montserrat', fontSize: 25, fontWeight: 'bold', color: 'black',
+                alignItems: 'center', justifyContent: 'center'}}>Phase<br/>1<br/> Humble<br/>Beginnings
+                </Text>
+                </ImageBackground>
               </Col>
               <Col sm={4}>
                 <img src = {BulbCog} alt = "BulbCog" width = '30%' height = 'auto'/>
@@ -133,13 +175,26 @@ class StemLeadersProgram extends Component {
                 </Text>
               </Col>
               <Col sm={4}>
-                One of three columns
+                <Image source={Lanyard} style={{width: 250, height: 250, borderRadius: 250/2, borderColor: '#FFBB64', borderWidth: 4}}/>
               </Col>
             </Row>
             <br/><br/><br/>
             <Row>
-              <Col sm={4}>
-                One of three columns
+              <Col align='center' sm={4}>
+              <ImageBackground
+                style = {{
+                  borderRadius: 200/2,
+                  width: 200,
+                  height: 200,
+                  backgroundColor:'#adedff',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+              >
+                <Text style ={{fontFamily: 'Montserrat', fontSize: 25, fontWeight: 'bold', color: 'black',
+                  alignItems: 'center', justifyContent: 'center'}}>Phase<br/>2<br/>Taking<br/>Flight
+                </Text>
+                </ImageBackground>
               </Col>
               <Col sm={4}>
                 <img src = {Molecule} alt = "Molecule" width = '30%' height = 'auto'/>
@@ -149,13 +204,26 @@ class StemLeadersProgram extends Component {
                 </Text>
               </Col>
               <Col sm={4}>
-                One of three columns
+                <Image source={TableMeeting} style={{width: 250, height: 250, borderRadius: 250/2, borderColor: '#FFBB64', borderWidth: 4}}/>
               </Col>
             </Row>
             <br/><br/><br/>
             <Row>
-              <Col sm={4}>
-                One of three columns
+              <Col align='center' sm={4}>
+              <ImageBackground
+                style = {{
+                  borderRadius: 200/2,
+                  width: 200,
+                  height: 200,
+                  backgroundColor:'#86e5ff',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+              >
+                <Text style ={{fontFamily: 'Montserrat', fontSize: 25, fontWeight: 'bold', color: 'black',
+                  alignItems: 'center', justifyContent: 'center'}}>Phase<br/>3<br/>Airbourne
+                </Text>
+                </ImageBackground>
               </Col>
               <Col sm={4}>
                 <img src = {Wrench} alt = "Wrench" width = '30%' height = 'auto'/>
@@ -166,13 +234,26 @@ class StemLeadersProgram extends Component {
                 </Text>
               </Col>
               <Col sm={4}>
-                One of three columns
+                <Image source={TableSmiling} style={{width: 250, height: 250, borderRadius: 250/2, borderColor: '#FFBB64', borderWidth: 4}}/>
               </Col>
             </Row>
             <br/><br/><br/>
             <Row>
-              <Col sm={4}>
-                One of three columns
+              <Col align='center'sm={4}>
+              <ImageBackground
+                style = {{
+                  borderRadius: 200/2,
+                  width: 200,
+                  height: 200,
+                  backgroundColor:'#02ACFF',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+              >
+                <Text style ={{fontFamily: 'Montserrat', fontSize: 25, fontWeight: 'bold', color: 'black',
+                  alignItems: 'center', justifyContent: 'center'}}>Phase<br/>4<br/>Conquering<br/>the<br/>Sky
+                </Text>
+                </ImageBackground>
               </Col>
               <Col sm={4}>
                 <img src = {Presentation} alt = "Presentation" width = '30%' height = 'auto'/>
@@ -183,7 +264,7 @@ class StemLeadersProgram extends Component {
                 </Text>
               </Col>
               <Col sm={4}>
-                One of three columns
+                <Image source={Lecture} style={{width: 250, height: 250, borderRadius: 250/2, borderColor: '#FFBB64', borderWidth: 4}}/>
               </Col>
             </Row>
             <br/><br/><br/>
@@ -225,31 +306,74 @@ class StemLeadersProgram extends Component {
           <Row>
             <Col align = 'center' sm={3}>
               <img src = {Molecule} alt = "Molecule" width = '30%' height = 'auto'/>
+              <ImageBackground
+                style = {{
+                  borderRadius: 200/2,
+                  width: 200,
+                  height: 200,
+                  backgroundColor:'#FFBB64',
+                  opacity: 0.5,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+              >
+                <Image source={Molecule} style={{width: '30%', height: 'auto'}}/>
+                <Text style ={{fontFamily: 'Montserrat', fontSize: 20, align: 'center',  color: 'black'}}>Networking</Text>  
+              </ImageBackground>
             </Col>
             <Col align = 'center' sm={3}>
               <img src = {Desk} alt = "Desk" width = '30%' height = 'auto'/>
+              <br/>
+              <ImageBackground
+                style = {{
+                  borderRadius: 200/2,
+                  width: 200,
+                  height: 200,
+                  backgroundColor:'#0CADFB',
+                  opacity: 0.5,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+              >
+              <Text style ={{fontFamily: 'Montserrat', fontSize: 20, align: 'center',  color: 'black'}}>Project Management</Text>  
+              </ImageBackground>
             </Col>
             <Col align = 'center' sm={3}>
               <img src = {Thinking} alt = "Thinking" width = '30%' height = 'auto'/>
+              <br/>
+              <ImageBackground
+                style = {{
+                  borderRadius: 200/2,
+                  width: 200,
+                  height: 200,
+                  backgroundColor:'#FFBB64',
+                  opacity: 0.5,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+              >
+              <Text style ={{fontFamily: 'Montserrat', fontSize: 20, align: 'center',  color: 'black'}}>Emotional Intelligence</Text>  
+              </ImageBackground>
             </Col>
             <Col align = 'center' sm={3}>
               <img src = {Brain} alt = "Brain" width = '30%' height = 'auto'/>
+              <br/>
+              <ImageBackground
+                style = {{
+                  borderRadius: 200/2,
+                  width: 200,
+                  height: 200,
+                  backgroundColor:'#0CADFB',
+                  opacity: 0.5,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+              >
+              <Text style ={{fontFamily: 'Montserrat', fontSize: 20, align: 'center',  color: 'black'}}>Critical Thinking</Text>  
+              </ImageBackground>
             </Col>
         </Row>
-        <Row>
-            <Col align = 'center' sm={3}>
-            <Text style ={{fontFamily: 'Montserrat', fontSize: 20, align: 'center',  color: 'black'}}>Networking</Text>  
-            </Col>
-            <Col align = 'center' sm={3}>
-            <Text style ={{fontFamily: 'Montserrat', fontSize: 20, align: 'center',  color: 'black'}}>Project Management</Text>  
-            </Col>
-            <Col align = 'center' sm={3}>
-            <Text style ={{fontFamily: 'Montserrat', fontSize: 20, align: 'center',  color: 'black'}}>Emotional Intelligence</Text>  
-            </Col>
-            <Col align = 'center' sm={3}>
-            <Text style ={{fontFamily: 'Montserrat', fontSize: 20, align: 'center',  color: 'black'}}>Critical Thinking</Text>  
-            </Col>
-        </Row>
+        
         <br/><br/>
         <Row>
           <Col sm={7} >
@@ -267,6 +391,9 @@ class StemLeadersProgram extends Component {
           </Col>
         </Row>
         <br/><br/>
+        {/* <Row align = 'center'>
+          <img src = {Logos} alt = "Logos" width = '100%' height = 'auto'/>
+        </Row> */}
         <Row>
           <Col align = 'center' sm={4}>
             <img src = {Accenture} alt = "Accenture" width = '60%' height = 'auto'/>
@@ -314,7 +441,9 @@ class StemLeadersProgram extends Component {
             <img src = {Wattblock} alt = "Wattblock" width = '60%' height = 'auto'/>
           </Col>
         </Row>
+
         </Container>
+
         <Footer/>
       </body>
     )
@@ -323,7 +452,26 @@ class StemLeadersProgram extends Component {
 
 export default StemLeadersProgram
 
-setConfiguration({ defaultScreenClass: 'xl', containerWidths: 1140 , gutterWidth: 100});
+// setConfiguration({ defaultScreenClass: 'xl', containerWidths: 1140 , gutterWidth: 100});
+
+// const styles = StyleSheet.create({
+//   innerCircle: {
+//     borderRadius: 35,
+//     width: 70,
+//     height: 70,
+//     margin: 5,
+//     backgroundColor: 'black'
+//   },
+// });
+
+const ColorCircle = styled.div`
+  background-color: ${props => props.bgColor || 'black'}
+  border-radius: 35;
+  width: 70;
+  height: 70;
+  margin: 5;
+`
+
 const StemBold = styled.div`
     font-family: Montserrat;
     font-size: 6em;
