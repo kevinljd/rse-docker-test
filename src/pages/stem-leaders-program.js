@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { ImageBackground, Text, Image, Dimensions, TouchableHighlight} from 'react-native'
-import { setConfiguration, Container, Row, Col } from 'react-grid-system'
+import { ImageBackground, Text, Image} from 'react-native'
+import { Container, Row, Col } from 'react-grid-system'
 import NavBar from "../components/navbar"
 import Footer from "../components/footer"
 
@@ -99,7 +99,18 @@ class StemLeadersProgram extends Component {
               <Col align='right' sm={1}>
               </Col>
               <Col align='right' sm={4}>
-                <img src = {Talk} alt = "Talk" width = '100%' height = 'auto'/>
+                {/* <ImageBackground
+                  style = {{
+                    borderRadius: 200/2,
+                    width: 200,
+                    height: 200,
+                    backgroundColor:'#FFBB64',
+                    justifyContent: 'right',
+                    alignItems: 'flex-end',
+                  }}
+                > */}
+                  <img src = {Talk} alt = "Talk" width = '100%' height = 'auto'/>
+                {/* </ImageBackground> */}
               </Col>
             </Row>
             <br/>      
@@ -153,17 +164,28 @@ class StemLeadersProgram extends Component {
               <Col align='center' sm={4}>
               <ImageBackground
                 style = {{
-                  borderRadius: 200/2,
-                  width: 200,
-                  height: 200,
-                  backgroundColor:'#d4f6ff',
-                  justifyContent: 'center',
-                  alignItems: 'center',
+                  borderRadius: 100/2,
+                  width: 100,
+                  height: 100,
+                  backgroundColor:'#FFBB64',
+                  justifyContent: 'right',
+                  alignItems: 'flex-end',
                 }}
               >
-                <Text style ={{fontFamily: 'Montserrat', fontSize: 25, fontWeight: 'bold', color: 'black',
-                alignItems: 'center', justifyContent: 'center'}}>Phase<br/>1<br/> Humble<br/>Beginnings
-                </Text>
+                <ImageBackground
+                  style = {{
+                    borderRadius: 200/2,
+                    width: 200,
+                    height: 200,
+                    backgroundColor:'#d4f6ff',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}
+                >
+                  <Text style ={{fontFamily: 'Montserrat', fontSize: 25, fontWeight: 'bold', color: 'black',
+                  alignItems: 'center', justifyContent: 'center'}}>Phase<br/>1<br/> Humble<br/>Beginnings
+                  </Text>
+                  </ImageBackground>
                 </ImageBackground>
               </Col>
               <Col sm={4}>
@@ -183,17 +205,28 @@ class StemLeadersProgram extends Component {
               <Col align='center' sm={4}>
               <ImageBackground
                 style = {{
-                  borderRadius: 200/2,
-                  width: 200,
-                  height: 200,
-                  backgroundColor:'#adedff',
-                  justifyContent: 'center',
-                  alignItems: 'center',
+                  borderRadius: 100/2,
+                  width: 100,
+                  height: 100,
+                  backgroundColor:'#FFBB64',
+                  justifyContent: 'flex-end',
+                  alignItems: 'right',
                 }}
               >
-                <Text style ={{fontFamily: 'Montserrat', fontSize: 25, fontWeight: 'bold', color: 'black',
-                  alignItems: 'center', justifyContent: 'center'}}>Phase<br/>2<br/>Taking<br/>Flight
-                </Text>
+                <ImageBackground 
+                  style = {{
+                    borderRadius: 200/2,
+                    width: 200,
+                    height: 200,
+                    backgroundColor:'#adedff',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}
+                >
+                  <Text style ={{fontFamily: 'Montserrat', fontSize: 25, fontWeight: 'bold', color: 'black',
+                    alignItems: 'center', justifyContent: 'center'}}>Phase<br/>2<br/>Taking<br/>Flight
+                  </Text>
+                  </ImageBackground>
                 </ImageBackground>
               </Col>
               <Col sm={4}>
@@ -212,17 +245,28 @@ class StemLeadersProgram extends Component {
               <Col align='center' sm={4}>
               <ImageBackground
                 style = {{
-                  borderRadius: 200/2,
-                  width: 200,
-                  height: 200,
-                  backgroundColor:'#86e5ff',
-                  justifyContent: 'center',
-                  alignItems: 'center',
+                  borderRadius: 100/2,
+                  width: 100,
+                  height: 100,
+                  backgroundColor:'#FFBB64',
+                  justifyContent: 'right',
+                  alignItems: 'flex-end',
                 }}
               >
-                <Text style ={{fontFamily: 'Montserrat', fontSize: 25, fontWeight: 'bold', color: 'black',
-                  alignItems: 'center', justifyContent: 'center'}}>Phase<br/>3<br/>Airbourne
-                </Text>
+                <ImageBackground
+                  style = {{
+                    borderRadius: 200/2,
+                    width: 200,
+                    height: 200,
+                    backgroundColor:'#86e5ff',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}
+                >
+                  <Text style ={{fontFamily: 'Montserrat', fontSize: 25, fontWeight: 'bold', color: 'black',
+                    alignItems: 'center', justifyContent: 'center'}}>Phase<br/>3<br/>Airbourne
+                  </Text>
+                  </ImageBackground>
                 </ImageBackground>
               </Col>
               <Col sm={4}>
@@ -242,17 +286,28 @@ class StemLeadersProgram extends Component {
               <Col align='center'sm={4}>
               <ImageBackground
                 style = {{
-                  borderRadius: 200/2,
-                  width: 200,
-                  height: 200,
-                  backgroundColor:'#02ACFF',
-                  justifyContent: 'center',
-                  alignItems: 'center',
+                  borderRadius: 100/2,
+                  width: 100,
+                  height: 100,
+                  backgroundColor:'#FFBB64',
+                  justifyContent: 'flex-end',
+                  alignItems: 'right',
                 }}
               >
-                <Text style ={{fontFamily: 'Montserrat', fontSize: 25, fontWeight: 'bold', color: 'black',
-                  alignItems: 'center', justifyContent: 'center'}}>Phase<br/>4<br/>Conquering<br/>the<br/>Sky
-                </Text>
+                <ImageBackground
+                  style = {{
+                    borderRadius: 200/2,
+                    width: 200,
+                    height: 200,
+                    backgroundColor:'#02ACFF',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}
+                >
+                  <Text style ={{fontFamily: 'Montserrat', fontSize: 25, fontWeight: 'bold', color: 'black',
+                    alignItems: 'center', justifyContent: 'center'}}>Phase<br/>4<br/>Conquering<br/>the<br/>Sky
+                  </Text>
+                  </ImageBackground>
                 </ImageBackground>
               </Col>
               <Col sm={4}>
