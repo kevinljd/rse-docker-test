@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-grid-system'
 import NavBar from "../components/navbar"
 import Footer from "../components/footer"
 
+import Girl from "../img/programs/img/girl.JPG" 
 import Talk from "../img/programs/img/talk.JPG" 
 
 import PeopleStat from "../img/programs/img/stats1.png" 
@@ -29,7 +30,7 @@ import Thinking from "../img/programs/img/thinking copy.png"
 import Brain from "../img/programs/img/brainstorm copy.png"
 
 
-import Logos from "../img/programs/img/partners/Logos.JPG"
+// import Logos from "../img/programs/img/partners/Logos.JPG"
 
 import Accenture from "../img/programs/img/partners/Accenture.png"
 import AECOM from "../img/programs/img/partners/AECOM.png"
@@ -64,7 +65,7 @@ class StemLeadersProgram extends Component {
         </Text>
         </ImageBackground>
 
-        <br/>
+        <br/><br/><br/>
 
            <Container>
             <Row>
@@ -80,8 +81,10 @@ class StemLeadersProgram extends Component {
                   opportunity 
                   </Text>
               </Col>
-              <Col sm={4}>
-                
+              <Col align='right' sm={1}>
+              </Col>
+              <Col align='right' sm={4}>
+                <img src = {Girl} alt = "Girl" width = '100%' height = 'auto'/>            
               </Col>
             </Row>
             <br/><br/><br/>
@@ -519,13 +522,13 @@ export default StemLeadersProgram
 //   },
 // });
 
-const ColorCircle = styled.div`
-  background-color: ${props => props.bgColor || 'black'}
-  border-radius: 35;
-  width: 70;
-  height: 70;
-  margin: 5;
-`
+// const ColorCircle = styled.div`
+//   background-color: ${props => props.bgColor || 'black'}
+//   border-radius: 35;
+//   width: 70;
+//   height: 70;
+//   margin: 5;
+// `
 
 const StemBold = styled.div`
     font-family: Montserrat;
