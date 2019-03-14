@@ -1,0 +1,55 @@
+[
+    {
+        "title": "January 2016",
+        "circle": {
+            "src": "/img/about/ajay.png",
+            "alt": "ajay"
+        },
+        "photo": {
+            "src": "/img/about/DSC02101.JPG",
+            "alt": "people"
+        },
+        "body": "Real Skills Education began in 2016 founded by Ajay Prakash and Walter Kong with a strong interest in professional skill development. Providing students with interactive sessions to create the optimal learning environment that reflects the modern changes in the job market."
+    },
+    {
+        "title": "October 2016",
+        "circle": {
+            "src": "/img/about/IMG_4527.JPG",
+            "alt": "circle"
+        },
+        "body": "The 1st STEM Leaders Program is held with 32 participants and 5 projects."
+    },
+    {
+        "title": "January 2017",
+        "circle": {
+            "src": "/img/about/DSCF0231.JPG",
+            "alt": "study"
+        },
+        "photo": {
+            "src": "/img/about/20170204_120501.jpg",
+            "alt": "catapult"
+        },
+        "body": "The team grows to 11 people with the introduction of the partners, programs and marketing divisions. RSE is sponsored by the UNSW Engineering Faculty as a Student Led Project."
+    },
+    {
+        "title": "July 2017",
+        "circle": {
+            "src": "/img/about/_DSC0716.jpg",
+            "alt": "ajay"
+        },
+        "body": "We run the 2nd Stem Leaders Program, with 45 participants and the introduction of the Chemical and Electrical Engineering streams. William becomes President of Operations with a team of 15 people. Our Board of Directors is formed with Sarah (Fujitsu General) and Richard (Dematic) joining."
+    },
+    {
+        "title": "October 2018",
+        "circle": {
+            "src": "/img/about/Ideation-63.jpg",
+            "alt": "raise"
+        },
+        "photo": {
+            "src": "/img/about/RSEN-87.jpg",
+            "alt": "slpsummer2018"
+        },
+        "body": "The Board of Advisors is formed with Raymond (Suncorp), Andrew (Gamurs) and Marco (Charter Hall) joining. We run the 5th SLP with 215 applications, 59 participants and 7 industry projects. Our sponsorship from the UNSW Engineering Faculty comes to an end."
+    }
+]
+   

@@ -2,28 +2,33 @@ import './about.css';
 import styled from 'styled-components'
 import { Row, Col} from 'react-grid-system'
 import React, { Component } from 'react'
+
 import NavBar from "../components/navbar"
+import TimelineItem from '../components/TimelineItem'
+
+import timelineData from '../data/timeline.json'
+import Divider from "../img/about/overlay.png"
 import Gift from "../img/about/gift.png"
 import Inspire from "../img/about/Inspire.png"
 import Fail from "../img/about/Fail.png"
 import Icecream from "../img/about/ice-cream.png"
 import Ajay from "../img/about/ajay.png"
 import Circle from "../img/about/IMG_4527.JPG"
-import Cover from "../img/about/DSC_0074dark.jpg"
+import Cover from "../img/about/cover.png"
 import People from "../img/about/DSC02101.JPG"
 import Study from "../img/about/DSCF0231.JPG"
 import Group from "../img/about/_DSC0716.jpg"
 import Teach from "../img/about/FullSizeRender_1.jpg"
 import Sitting from "../img/about/IMG_9605 - ppl 2.jpg"
 import Help from "../img/about/IMG_20180407_140301.jpg"
-//import Sitting from "../img/about/20170204_120501.jpg"
+import Catapult from "../img/about/20170204_120501.jpg"
 import Pitch from "../img/about/_DSC0395.jpg"
 import Presentation from "../img/about/slp cover.jpg"
 import RSEteam from "../img/about/DSE_7185.jpg"
 import SLPSummer18 from "../img/about/RSEN-87.jpg"
 import Raise from "../img/about/Ideation-63.jpg"
 
-//import { whileStatement } from 'babel-types';
+
 
 class About extends Component {
   render() {
@@ -32,7 +37,7 @@ class About extends Component {
         <NavBar/>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         <Background img={Cover}>
-          <h1 className={"aboutus"} style={{fontSize:'5em', padding:'5em 0em', color: 'white'}}>About Us</h1>
+          <h1 className={"aboutus"} style={{fontSize:'5em', padding:'0', color: 'white'}}>About Us</h1>
         </Background>
         <Container className={"container"}>
           <h1 className={"title"} style={{borderBottom: '2px solid black'}}>Values</h1>
@@ -108,10 +113,11 @@ class About extends Component {
             </Col>
           </Row>
         </Container>
+        <Overlay img={Divider}/>
         <Legacy style={{backgroundColor:'#333333', textAlign:'center', color:'white'}}>
           <h1 className={"title"} style={{borderBottom: '2px solid white', color:'white'}}>Our Legacy</h1>
-        <Padding>
-        <Row>
+        <div>
+        {/* <Row>
           <Col sm={1}></Col>
           <Col sm={2}>
             <img src={Ajay} alt={"Ajay"} width={200} className={"icon"}/>
@@ -130,13 +136,13 @@ class About extends Component {
           <Col sm={1}></Col>
           <Col sm={4}>
             <div style={{display: 'inline-block', backgroundColor: 'lightgrey'}}>
-              <img src={People} height={200} width="auto" style={{border: '10px solid white', transform: 'translate(30px, -30px)' }} alt="people"/>
+              <Photo src={People} height={200} width="auto" alt="people"/>
             </div> 
           </Col>
           <Col sm={1}></Col>
         </Row>
-        </Padding>
-        <Padding>
+        </div>
+        <div>
         <Row>
           <Col sm={1}></Col>
           <Col sm={2}>
@@ -151,32 +157,32 @@ class About extends Component {
           <Col sm={4}> 
           </Col>
         </Row>
-        </Padding>
-        <Padding>
+        </div>
+        <div>
         <Row>
-          <Col sm={1}></Col>
-          <Col sm={2}>
-            <img src={Study} alt={"Time Line 3"} width={200} className={"icon"}/>
+          <Col lg={1}/>
+          <Col sm={12} lg={2}>
+            <img src={Study} alt="Time Line 3" width={200} className={"icon"}/>
           </Col>
-          <Col sm={3}> 
+          <Col sm={12} lg={4}> 
             <p style={{textAlign:'left'}}><b style={{fontSize: '1.5em'}}>January 2017</b><br/><br/>
               The team grows to 11 people with the
               introduction of the partners, programs
               and marketing divisions.
               RSE is sponsored by the UNSW
               Engineering Faculty as a Student Led
-              Project.</p>
+              Project.
+            </p>
           </Col>
-          <Col sm={1}></Col>
-          <Col sm={4}>
-          <div style={{display: 'inline-block', backgroundColor: 'lightgrey'}}>
-              <img src={People} height={200} width="auto" style={{border: '10px solid white', transform: 'translate(30px, -30px)' }} alt="people"/>
+          <Col lg={4}>
+            <div style={{display: 'inline-block', backgroundColor: 'lightgrey'}}>
+              <Photo src={Catapult} height={200} width="auto" alt="people"/>
             </div> 
           </Col>
           <Col sm={1}></Col>
         </Row>
-        </Padding>
-        <Padding>
+        </div>
+        <div>
         <Row>
           <Col sm={1}></Col>
           <Col sm={2}>
@@ -198,8 +204,8 @@ class About extends Component {
           <Col sm={4}> 
           </Col>
         </Row>
-        </Padding>
-        <Padding>
+        </div>
+        <div>
         <Row>
           <Col sm={1}></Col>
           <Col sm={2}>
@@ -218,13 +224,13 @@ class About extends Component {
           <Col sm={1}></Col>
           <Col sm={4}> 
             <div style={{display: 'inline-block', backgroundColor: 'lightgrey'}}>
-              <img src={Pitch} height={200} width="auto" style={{border: '10px solid white', transform: 'translate(30px, -30px)' }} alt="people"/>
+              <Photo src={Pitch} height={200} width="auto" alt="people"/>
             </div> 
           </Col>
           <Col sm={1}></Col>
         </Row>
-        </Padding>
-        <Padding>
+        </div>
+        <div>
         <Row>
           <Col sm={1}></Col>
           <Col sm={2}>
@@ -245,8 +251,8 @@ class About extends Component {
           <Col sm={4}> 
           </Col>
         </Row>
-        </Padding>
-        <Padding>
+        </div>
+        <div>
         <Row>
           <Col sm={1}></Col>
           <Col sm={2}>
@@ -267,13 +273,13 @@ class About extends Component {
           <Col sm={1}></Col>
           <Col sm={4}>
             <div style={{display: 'inline-block', backgroundColor: 'lightgrey'}}>
-              <img src={Presentation} height={200} width="auto" style={{border: '10px solid white', transform: 'translate(30px, -30px)' }} alt="people"/>
+              <Photo src={Presentation} height={200} width="auto" alt="people"/>
             </div> 
           </Col>
           <Col sm={1}></Col>
         </Row>
-        </Padding>
-        <Padding>
+        </div>
+        <div>
         <Row>
           <Col sm={1}></Col>
           <Col sm={2}>
@@ -293,8 +299,8 @@ class About extends Component {
           <Col sm={4}> 
           </Col>
         </Row>
-        </Padding>
-        <Padding>
+        </div>
+        <div>
         <Row>
           <Col sm={1}></Col>
           <Col sm={2} className={"timeline"}>
@@ -314,12 +320,13 @@ class About extends Component {
           <Col sm={1}></Col>
           <Col sm={4}>
             <div style={{display: 'inline-block', backgroundColor: 'lightgrey'}}>
-              <img src={SLPSummer18} height={200} width="auto" style={{border: '10px solid white', transform: 'translate(30px, -30px)' }} alt="people"/>
+              <Photo src={SLPSummer18} height={200} width="auto" alt="people"/>
             </div> 
           </Col>
           <Col sm={1}></Col>
-        </Row>
-        </Padding>
+        </Row> */}
+        { timelineData.map(data => <TimelineItem {...data} />) }
+        </div>
         </Legacy>
       </div>
     )
@@ -330,11 +337,20 @@ const Background = styled.div`
   padding: 10rem 0;
   margin: 0 auto;
   height: 100vh;
-  width: auto;
+  width: 100%;
   background-image: url(${props => props.img});
   background-color: white;
-  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center;
 `
+
+const Overlay = styled.div`
+  height: 10rem;
+  background-image: url(${props => props.img});
+  background-color: white;
+  background-size: 100% 100%;
+`
+
 const Container = styled.div`
   padding: 5rem 10rem;
 `
@@ -343,5 +359,6 @@ const Padding = styled.div`
 `
 const Legacy = styled.div`
   padding: 10em 0em 8em;
-  fontFamily: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 `
+
