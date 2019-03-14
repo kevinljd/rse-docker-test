@@ -39,14 +39,14 @@ class About extends Component {
         <Background img={Cover}>
           <h1 className={"aboutus"} style={{fontSize:'5em', padding:'0', color: 'white'}}>About Us</h1>
         </Background>
-        <Container className={"container"}>
+        <Container>
           <h1 className={"title"} style={{borderBottom: '2px solid black'}}>Values</h1>
           <Row>
-            <Col sm={3} className={"text"}>
+            <Col sm={12} lg={3} className={"text"}>
               <img src={Gift} alt={"present"} width={200} height={200} className={"image"}/>
-              <p><b style={{fontSize: '2em'}}>G</b> <br/>
-                <b>Give Before Taking</b> <br/><br/></p>
-                  <p style={{color:'#333333', font:'Roboto', fontFamily:'sans-serif'}}>Your true worth is determined by
+              <Letter>G</Letter>
+              <Heading>Give Before Taking</Heading>
+              <p style={{color:'#333333', font:'Roboto', fontFamily:'sans-serif'}}>Your true worth is determined by
                   how much you give in value than
                   you take in payment. <br/>
                   This may sound like a recipe for
@@ -63,11 +63,11 @@ class About extends Component {
                   sharing and giving.
                   Generosity builds success.</p>
             </Col>
-            <Col sm={3} className={"text"}>
+            <Col sm={12} lg={3} className={"text"}>
               <img src={Inspire} alt={"light bulb"} width={200} height={200} className={"image"}/>
-              <p><b style={{fontSize: '2em'}}>I</b> <br/>
-                <b>Inspire Others To Suceed</b> <br/><br/></p>
-                <p style={{color:'#333333', font:'Roboto', fontFamily:'sans-serif'}}>“Average people raise the bar on
+              <Letter>I</Letter>
+              <Heading>Inspire Others To Succeed</Heading>
+              <p style={{color:'#333333', font:'Roboto', fontFamily:'sans-serif'}}>“Average people raise the bar on
                 themselves;<br/>
                 Good people raise the bar for
                 others;<br/>
@@ -84,10 +84,10 @@ class About extends Component {
                 those in our community to
                 achieve their goals.</p>
             </Col>
-            <Col sm={3} className={"text"}>
+            <Col sm={12} lg={3} className={"text"}>
               <img src={Fail} alt={"X"} width={200} height={200} className="image"/>
-              <p><b style={{fontSize: '2em'}}>F</b> <br/>
-                <b>Fail, But Only Once</b> <br/><br/></p>
+              <Letter>F</Letter>
+              <Heading>Fail, But Only Once</Heading>
                   <p style={{color:'#333333', font:'Roboto', fontFamily:'sans-serif'}}>Instead of fearing failure,
                   embrace it. But from each
                   failure, learn what went
@@ -98,10 +98,10 @@ class About extends Component {
                   experience which brings
                   you closer to success.</p>
             </Col>
-            <Col sm={3} className={"text"}>
+            <Col sm={12} lg={3} className={"text"}>
               <img src={Icecream} alt={"icecream"} width={200} height={200} className={"image"}/>
-              <p><b style={{fontSize: '2em'}}>T</b> <br/>
-                <b>Try All The Flavours Of The Icecream</b> <br/></p>
+              <Letter>T</Letter>
+              <Heading>Try All the Flavours of the Icecream</Heading>
                 <p style={{color:'#333333', font:'Roboto', fontFamily:'sans-serif'}}>Try as many things as you
                 can and work out what
                 drives you. RSE provides
@@ -115,216 +115,8 @@ class About extends Component {
         </Container>
         <Overlay img={Divider}/>
         <Legacy style={{backgroundColor:'#333333', textAlign:'center', color:'white'}}>
-          <h1 className={"title"} style={{borderBottom: '2px solid white', color:'white'}}>Our Legacy</h1>
+          <h1 className={"title"} style={{borderBottom: '2px solid white', margin: '4rem 4rem', color:'white'}}>Our Legacy</h1>
         <div>
-        {/* <Row>
-          <Col sm={1}></Col>
-          <Col sm={2}>
-            <img src={Ajay} alt={"Ajay"} width={200} className={"icon"}/>
-          </Col>
-          <Col sm={3}> 
-            <p style={{textAlign:'left'}}><b style={{fontSize: '1.5em'}}>January 2016</b><br/><br/>
-            Real Skills Education began in 2016
-            founded by Ajay Prakash and Walter
-            Kong with a strong interest
-            inprofessional skill development.
-            Providing students with interactive
-            sessions to create the optimal learning
-            environment that reflects the modern
-            changes in the job market.</p>
-          </Col>
-          <Col sm={1}></Col>
-          <Col sm={4}>
-            <div style={{display: 'inline-block', backgroundColor: 'lightgrey'}}>
-              <Photo src={People} height={200} width="auto" alt="people"/>
-            </div> 
-          </Col>
-          <Col sm={1}></Col>
-        </Row>
-        </div>
-        <div>
-        <Row>
-          <Col sm={1}></Col>
-          <Col sm={2}>
-            <img src={Circle} alt={"Time Line 2"} width={200} className={"icon"}/>
-          </Col>
-          <Col sm={3}> 
-            <p style={{textAlign:'left'}}><b style={{fontSize: '1.5em'}}>October 2016</b><br/><br/>
-            The 1st STEM Leaders Program is held
-            with 32 participants and 5 projects.</p>
-          </Col>
-          <Col sm={2}></Col>
-          <Col sm={4}> 
-          </Col>
-        </Row>
-        </div>
-        <div>
-        <Row>
-          <Col lg={1}/>
-          <Col sm={12} lg={2}>
-            <img src={Study} alt="Time Line 3" width={200} className={"icon"}/>
-          </Col>
-          <Col sm={12} lg={4}> 
-            <p style={{textAlign:'left'}}><b style={{fontSize: '1.5em'}}>January 2017</b><br/><br/>
-              The team grows to 11 people with the
-              introduction of the partners, programs
-              and marketing divisions.
-              RSE is sponsored by the UNSW
-              Engineering Faculty as a Student Led
-              Project.
-            </p>
-          </Col>
-          <Col lg={4}>
-            <div style={{display: 'inline-block', backgroundColor: 'lightgrey'}}>
-              <Photo src={Catapult} height={200} width="auto" alt="people"/>
-            </div> 
-          </Col>
-          <Col sm={1}></Col>
-        </Row>
-        </div>
-        <div>
-        <Row>
-          <Col sm={1}></Col>
-          <Col sm={2}>
-            <img src={Group} alt={"Time Line 4"} width={200} className={"icon"}/>
-          </Col>
-          <Col sm={3}> 
-            <p style={{textAlign:'left'}}><b style={{fontSize: '1.5em'}}>July 2017</b><br/><br/>
-            We run the 2nd Stem Leaders Program,
-            with 45 participants and the
-            introduction of the Chemical and
-            Electrical Engineering streams. <br/><br/>
-            William becomes President of
-            Operations with a team of 15 people.<br/><br/>
-            Our Board of Directors is formed with
-            Sarah (Fujitsu General) and Richard
-            (Dematic) joining.</p>
-          </Col>
-          <Col sm={2}></Col>
-          <Col sm={4}> 
-          </Col>
-        </Row>
-        </div>
-        <div>
-        <Row>
-          <Col sm={1}></Col>
-          <Col sm={2}>
-            <img src={Teach} alt={"Time Line 5"} width={200} className={"icon"}/>
-          </Col>
-          <Col sm={3}> 
-            <p style={{textAlign:'left'}}><b style={{fontSize: '1.5em'}}>October 2017</b><br/><br/>
-              We run our first workshop for high
-              school students at the B.Inspiring
-              STEM Conference.<br/><br/>
-              We run the 3rd Stem Leaders Program
-              with 92 applications, 57 participants
-              and the introduction of the Biomedical
-              and IT/Data streams.</p>
-          </Col>
-          <Col sm={1}></Col>
-          <Col sm={4}> 
-            <div style={{display: 'inline-block', backgroundColor: 'lightgrey'}}>
-              <Photo src={Pitch} height={200} width="auto" alt="people"/>
-            </div> 
-          </Col>
-          <Col sm={1}></Col>
-        </Row>
-        </div>
-        <div>
-        <Row>
-          <Col sm={1}></Col>
-          <Col sm={2}>
-            <img src={Sitting} alt={"Time Line 6"} width={200} className={"icon"}/>
-          </Col>
-          <Col sm={3}> 
-            <p style={{textAlign:'left'}}><b style={{fontSize: '1.5em'}}>January 2018</b><br/><br/>
-              Our team grows to 18 people with the
-              introduction of the HR division.<br/><br/>
-              RSE takes part in FYA’s Innovation
-              Nation Program.<br/><br/>
-              RSE becomes a member of the UNSW
-              Engineering Faculty’s Industry
-              Partnership Program Package.
-              </p>
-          </Col>
-          <Col sm={2}></Col>
-          <Col sm={4}> 
-          </Col>
-        </Row>
-        </div>
-        <div>
-        <Row>
-          <Col sm={1}></Col>
-          <Col sm={2}>
-            <img src={Help} alt={"Time Line 7"} width={200} className={"icon"}/>
-          </Col>
-          <Col sm={3}> 
-            <p style={{textAlign:'left'}}><b style={{fontSize: '1.5em'}}>April 2018</b><br/><br/>
-            Introduction of the IT division to the
-            team.<br/><br/>
-            We run our first on-site high school
-            workshop at Strathfield Girls High
-            School and our first USYD workshop in
-            collaboration with SUEUA.<br/><br/>
-            Across the semester, we present for
-            over 100 people through our
-            workshops.</p>
-          </Col>
-          <Col sm={1}></Col>
-          <Col sm={4}>
-            <div style={{display: 'inline-block', backgroundColor: 'lightgrey'}}>
-              <Photo src={Presentation} height={200} width="auto" alt="people"/>
-            </div> 
-          </Col>
-          <Col sm={1}></Col>
-        </Row>
-        </div>
-        <div>
-        <Row>
-          <Col sm={1}></Col>
-          <Col sm={2}>
-            <img src={RSEteam} alt={"Time Line 8"} width={200} className={"icon"}/>
-          </Col>
-          <Col sm={3}> 
-            <p style={{textAlign:'left'}}><b style={{fontSize: '1.5em'}}>July 2018</b><br/><br/>
-            Our operational team grows to 39
-            people.<br/><br/>
-            We run the 4th SLP, with over 214
-            applications, 84 participants and 9
-            industry projects.<br/><br/>
-            Introduction of the Engineering Power-
-            Up Program with 26 participants.</p>
-          </Col>
-          <Col sm={2}></Col>
-          <Col sm={4}> 
-          </Col>
-        </Row>
-        </div>
-        <div>
-        <Row>
-          <Col sm={1}></Col>
-          <Col sm={2} className={"timeline"}>
-            <img src={Raise} alt={"Time Line 9"} width={200} className={"icon"}/>
-          </Col>
-          <Col sm={3}> 
-            <p style={{textAlign:'left'}}><b style={{fontSize: '1.5em'}}>October 2018</b><br/><br/>
-            The Board of Advisors is formed with
-            Raymond (Suncorp), Andrew (Gamurs)
-            and Marco (Charter Hall) joining.<br/><br/>
-            We run the 5th SLP with 215
-            applications, 59 participants and 7
-            industry projects.<br/><br/>
-            Our sponsorship from the UNSW
-            Engineering Faculty comes to an end.</p>
-          </Col>
-          <Col sm={1}></Col>
-          <Col sm={4}>
-            <div style={{display: 'inline-block', backgroundColor: 'lightgrey'}}>
-              <Photo src={SLPSummer18} height={200} width="auto" alt="people"/>
-            </div> 
-          </Col>
-          <Col sm={1}></Col>
-        </Row> */}
         { timelineData.map(data => <TimelineItem {...data} />) }
         </div>
         </Legacy>
@@ -333,6 +125,7 @@ class About extends Component {
   }
 }
 export default About
+
 const Background = styled.div`
   padding: 10rem 0;
   margin: 0 auto;
@@ -342,6 +135,11 @@ const Background = styled.div`
   background-color: white;
   background-size: 100% 100%;
   background-position: center;
+
+  @media (max-width: 800px) {
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
 `
 
 const Overlay = styled.div`
@@ -361,4 +159,17 @@ const Legacy = styled.div`
   padding: 10em 0em 8em;
   font-family: 'Roboto', sans-serif;
 `
+
+const Heading = styled.p`
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333333;
+  min-height: 3rem;
+`
+
+const Letter = styled(Heading)`
+  font-size: 3rem;
+  margin: 1rem 0;
+`
+
 

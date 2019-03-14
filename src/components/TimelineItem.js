@@ -5,19 +5,19 @@ import { Row, Col } from 'react-grid-system'
 
 const TimelineItem = props => {
   return (
-    <Row>
-      <Col sm={1} />
-      <Col sm={2}>
+    <Row style={{margin: '5rem 0'}}>
+      <Col sm={1}/>
+      <Col sm={12} lg={2}>
         <Icon src={props.circle.src} alt={props.circle.alt} />
       </Col>
-      <Col sm={3}>
+      <Col sm={12} lg={4}>
         <h2>{props.title}</h2>
         <p>{props.body}</p>
       </Col>
       <Col sm={1}></Col>
-      <Col sm={4}>
+      <Col sm={12} lg={4}>
         {props.photo &&
-          <div style={{ display: 'inline-block', backgroundColor: 'lightgrey' }}>
+          <div style={{ display: 'inline-block', backgroundColor: 'lightgrey', marginTop: '3rem'}}>
             <Photo src={props.photo.src} alt={props.photo.alt} />
           </div>
         }
@@ -30,6 +30,7 @@ const TimelineItem = props => {
 const Photo = styled.img`
   border: 10px solid white;
   transform: translate(30px, -30px);
+  width: 16rem;
 
   @media (max-width: 800px) {
     display: none;
@@ -39,9 +40,10 @@ const Photo = styled.img`
 
 const Icon = styled.img`
     border-radius: 50%;
-    width:12.5rem;
+    width: 11rem;
     height: auto;
     border: 5px solid white;
+    vertical-align: center;
 `
 
 export default TimelineItem
