@@ -86,7 +86,8 @@ class StemLeadersProgram extends Component {
               <Col align='right' sm={1}>
               </Col>
               <Col align='right' sm={4}>
-                <img src = {Girl} alt = "Girl" width = '100%' height = 'auto'/>            
+                <img src = {Girl} alt = "Girl" width = '100%' height = 'auto' className={'firstRectangularShadow'}/>
+                <div className={'firstCircleInFront'}/>
               </Col>
             </Row>
             <br/><br/><br/>
@@ -114,7 +115,8 @@ class StemLeadersProgram extends Component {
                     alignItems: 'flex-end',
                   }}
                 > */}
-                  <img src = {Talk} alt = "Talk" width = '100%' height = 'auto'/>
+                  <img src = {Talk} alt = "Talk" width = '100%' height = 'auto' className={'secondRectangularShadow'}/>
+                  <div className={'secondCircleInFront'}/>
                 {/* </ImageBackground> */}
               </Col>
             </Row>
@@ -167,22 +169,24 @@ class StemLeadersProgram extends Component {
         <br/><br/><br/>
             <Row>
               <Col align='center' sm={4}>
+              <div className={'verticalLine'}/>
               <ImageBackground
                 style = {{
                   borderRadius: 100/2,
                   width: 100,
                   height: 100,
-                  backgroundColor:'#FFBB64',
+                  backgroundColor:'#fedbb0',
                   justifyContent: 'right',
                   alignItems: 'flex-end',
                 }}
+
               >
                 <ImageBackground
                   style = {{
                     borderRadius: 200/2,
                     width: 200,
                     height: 200,
-                    backgroundColor:'#d4f6ff',
+                    backgroundColor:'#daecfe',
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}
@@ -202,7 +206,7 @@ class StemLeadersProgram extends Component {
                 </Text>
               </Col>
               <Col sm={4}>
-                <Image source={Lanyard} style={{width: 250, height: 250, borderRadius: 250/2, borderColor: '#FFBB64', borderWidth: 4}}/>
+                <Image source={Lanyard} style={{width: 250, height: 250, borderRadius: 250/2, borderColor: '#FFBB64', borderWidth: 4}} className={'colImg'}/>
               </Col>
             </Row>
             <br/><br/><br/>
@@ -213,9 +217,10 @@ class StemLeadersProgram extends Component {
                   borderRadius: 100/2,
                   width: 100,
                   height: 100,
-                  backgroundColor:'#FFBB64',
+                  backgroundColor:'#fedbb0',
                   justifyContent: 'flex-end',
                   alignItems: 'right',
+                  transform: 'translateX(-100px) translateY(90px)',
                 }}
               >
                 <ImageBackground 
@@ -223,7 +228,7 @@ class StemLeadersProgram extends Component {
                     borderRadius: 200/2,
                     width: 200,
                     height: 200,
-                    backgroundColor:'#adedff',
+                    backgroundColor:'#aed7fd',
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}
@@ -242,7 +247,7 @@ class StemLeadersProgram extends Component {
                 </Text>
               </Col>
               <Col sm={4}>
-                <Image source={TableMeeting} style={{width: 250, height: 250, borderRadius: 250/2, borderColor: '#FFBB64', borderWidth: 4}}/>
+                <Image source={TableMeeting} style={{width: 250, height: 250, borderRadius: 250/2, borderColor: '#FFBB64', borderWidth: 4}} className={'colImg'}/>
               </Col>
             </Row>
             <br/><br/><br/>
@@ -253,7 +258,7 @@ class StemLeadersProgram extends Component {
                   borderRadius: 100/2,
                   width: 100,
                   height: 100,
-                  backgroundColor:'#FFBB64',
+                  backgroundColor:'#fedbb0',
                   justifyContent: 'right',
                   alignItems: 'flex-end',
                 }}
@@ -263,7 +268,7 @@ class StemLeadersProgram extends Component {
                     borderRadius: 200/2,
                     width: 200,
                     height: 200,
-                    backgroundColor:'#86e5ff',
+                    backgroundColor:'#84c1fd',
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}
@@ -283,7 +288,7 @@ class StemLeadersProgram extends Component {
                 </Text>
               </Col>
               <Col sm={4}>
-                <Image source={TableSmiling} style={{width: 250, height: 250, borderRadius: 250/2, borderColor: '#FFBB64', borderWidth: 4}}/>
+                <Image source={TableSmiling} style={{width: 250, height: 250, borderRadius: 250/2, borderColor: '#FFBB64', borderWidth: 4}} className={'colImg'}/>
               </Col>
             </Row>
             <br/><br/><br/>
@@ -294,9 +299,10 @@ class StemLeadersProgram extends Component {
                   borderRadius: 100/2,
                   width: 100,
                   height: 100,
-                  backgroundColor:'#FFBB64',
+                  backgroundColor:'#fedbb0',
                   justifyContent: 'flex-end',
                   alignItems: 'right',
+                  transform: 'translateX(-100px) translateY(90px)',
                 }}
               >
                 <ImageBackground
@@ -304,7 +310,7 @@ class StemLeadersProgram extends Component {
                     borderRadius: 200/2,
                     width: 200,
                     height: 200,
-                    backgroundColor:'#02ACFF',
+                    backgroundColor:'#84c1fd',
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}
@@ -324,7 +330,7 @@ class StemLeadersProgram extends Component {
                 </Text>
               </Col>
               <Col sm={4}>
-                <Image source={Lecture} style={{width: 250, height: 250, borderRadius: 250/2, borderColor: '#FFBB64', borderWidth: 4}}/>
+                <Image source={Lecture} style={{width: 250, height: 250, borderRadius: 250/2, borderColor: '#FFBB64', borderWidth: 4}} className={'colImg'}/>
               </Col>
             </Row>
             <br/><br/><br/>
