@@ -1,0 +1,24 @@
+.programWorkshopCols {
+    position: relative;
+    transform: translateY(-80px);
+}
+
+.programWorkshopText {
+    position: relative;
+    transform: translateY(-70px);
+    z-index: 1;
+}
+
+.programWorkshopLogos {
+    width: 30%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    transform: translateY(110px);
+}
+
+.programWorkshopBG {
+    position: relative;
+    /*transform: translateY(130px);*/
+    z-index: 0;
+}

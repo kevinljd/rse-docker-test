@@ -45,6 +45,8 @@ import Gamurs from "../img/programs/img/partners/Gamurs.png"
 import Hivery from "../img/programs/img/partners/Hivery_Core_Logo_Horizontal_with_Tagline_POS_MONO.png"
 import Wattblock from "../img/programs/img/partners/wattblock-logo.png"
 
+import './stem-leaders-program.css';
+
 require('typeface-montserrat')
 require('typeface-montserrat-alternates')
 require('typeface-roboto')
@@ -362,8 +364,8 @@ class StemLeadersProgram extends Component {
 
           <br/><br/><br/><br/><br/>       
           <Row>
-            <Col align = 'center' sm={3}>
-              <img src = {Molecule} alt = "Molecule" width = '30%' height = 'auto'/>
+            <Col align = 'center' sm={3} className={'programWorkshopCols'}>
+              <img src = {Molecule} className={'programWorkshopLogos'} alt = "Molecule" width = '30%' height = 'auto' />
               <ImageBackground
                 style = {{
                   borderRadius: 200/2,
@@ -374,13 +376,14 @@ class StemLeadersProgram extends Component {
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}
+                className = {'programWorkshopBG'}
               >
                 <Image source={Molecule} style={{width: '30%', height: 'auto'}}/>
-                <Text style ={{fontFamily: 'Montserrat', fontSize: 20, align: 'center',  color: 'black'}}>Networking</Text>  
+                <Text style ={{fontFamily: 'Montserrat', fontSize: 20, align: 'center',  color: 'black'}} className={'programWorkshopText'}>Networking</Text>
               </ImageBackground>
             </Col>
-            <Col align = 'center' sm={3}>
-              <img src = {Desk} alt = "Desk" width = '30%' height = 'auto'/>
+            <Col align = 'center' sm={3} className={'programWorkshopCols'}>
+              <img src = {Desk} alt = "Desk" width = '30%' height = 'auto' className={'programWorkshopLogos'}/>
               <br/>
               <ImageBackground
                 style = {{
@@ -392,12 +395,13 @@ class StemLeadersProgram extends Component {
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}
+                className={'programWorkshopBG'}
               >
-              <Text style ={{fontFamily: 'Montserrat', fontSize: 20, align: 'center',  color: 'black'}}>Project Management</Text>  
+              <Text style ={{fontFamily: 'Montserrat', fontSize: 20, align: 'center',  color: 'black'}} className={'programWorkshopText'}>Project Management</Text>
               </ImageBackground>
             </Col>
-            <Col align = 'center' sm={3}>
-              <img src = {Thinking} alt = "Thinking" width = '30%' height = 'auto'/>
+            <Col align = 'center' sm={3} className={'programWorkshopCols'}>
+              <img src = {Thinking} alt = "Thinking" width = '30%' height = 'auto' className={'programWorkshopLogos'}/>
               <br/>
               <ImageBackground
                 style = {{
@@ -409,12 +413,13 @@ class StemLeadersProgram extends Component {
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}
+                className={'programWorkshopBG'}
               >
-              <Text style ={{fontFamily: 'Montserrat', fontSize: 20, align: 'center',  color: 'black'}}>Emotional Intelligence</Text>  
+              <Text style ={{fontFamily: 'Montserrat', fontSize: 20, align: 'center',  color: 'black'}} className={'programWorkshopText'}>Emotional Intelligence</Text>
               </ImageBackground>
             </Col>
-            <Col align = 'center' sm={3}>
-              <img src = {Brain} alt = "Brain" width = '30%' height = 'auto'/>
+            <Col align = 'center' sm={3} className={'programWorkshopCols'}>
+              <img src = {Brain} alt = "Brain" width = '30%' height = 'auto' className={'programWorkshopLogos'}/>
               <br/>
               <ImageBackground
                 style = {{
@@ -426,8 +431,9 @@ class StemLeadersProgram extends Component {
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}
+                className={'programWorkshopBG'}
               >
-              <Text style ={{fontFamily: 'Montserrat', fontSize: 20, align: 'center',  color: 'black'}}>Critical Thinking</Text>  
+              <Text style ={{fontFamily: 'Montserrat', fontSize: 20, align: 'center',  color: 'black'}} className={'programWorkshopText'}>Critical Thinking</Text>
               </ImageBackground>
             </Col>
         </Row>
