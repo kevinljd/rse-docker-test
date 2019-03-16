@@ -1,0 +1,72 @@
+.firstCircleInFront {
+    height: 40%;
+    width: 28%;
+    background-color: #aed7fd;
+    border-radius: 100%;
+    position: relative;
+    transform: translateY(-70px) translateX(-300px);
+    z-index: 1;
+}
+
+.secondCircleInFront {
+    height: 30%;
+    width: 20%;
+    background-color: #aed7fd;
+    border-radius: 100%;
+    position: relative;
+    transform: translateY(-270px) translateX(30px);
+    z-index: 1;
+}
+
+.firstRectangularShadow {
+    box-shadow: 25px -20px #fedbb0;
+    /*position: relative;*/
+    /*z-index: 0;*/
+}
+
+.secondRectangularShadow {
+    box-shadow: -25px 20px #fedbb0;
+    /*position: relative;*/
+    /*z-index: 0;*/
+}
+
+.programWorkshopCols {
+    position: relative;
+    transform: translateY(-80px);
+}
+
+.programWorkshopText {
+    position: relative;
+    transform: translateY(-70px);
+    z-index: 1;
+}
+
+.programWorkshopLogos {
+    width: 30%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    transform: translateY(110px);
+}
+
+.programWorkshopBG {
+    position: relative;
+    /*transform: translateY(130px);*/
+    z-index: 0;
+}
+
+.colImg {
+    transform: translateX(100px) translateY(0px);
+}
+
+.phaseBubbles {
+    z-index: 1;
+}
+
+.verticalLine {
+    border-left: 3px solid #fedbb0;
+    height: 420%;
+    z-index: 0;
+    position: absolute;
+    transform: translateX(120px) translateY(0px)
+}
