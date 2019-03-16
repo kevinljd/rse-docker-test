@@ -34,20 +34,20 @@ class Contact extends Component {
            <Container>
             <Row>
               <Col sm={4} align="center">
-              {<img src = {Handshake} alt = "Handshake"width = {100} height = {100}></img>}
-                <Enquiries>For Partnership Enquiries</Enquiries>
+              {<img src = {Handshake} alt = "Handshake" width = {100} height = {100}/>}
+                <Enquiries>Partnership Enquiries</Enquiries>
                 <ReachOut>Reach out to us at</ReachOut>
                 <Link>alliance@realskillseducation.com</Link>
               </Col>
               <Col sm={4} align="center">
-              {<img src = {Programs} alt = "Programs"width = {100} height = {100}></img>}
-                <Enquiries>For Program Enquiries</Enquiries>
+              {<img src = {Programs} alt = "Programs" width = {100} height = {100}/>}
+                <Enquiries>Program Enquiries</Enquiries>
                 <ReachOut>Reach out to us at</ReachOut>
                 <Link>program@realskillseducation.com</Link>
               </Col>
               <Col sm={4} align="center">
-              {<img src = {FBLogo} alt = "FBLogo" width = {100} height = {100}></img>}
-                <Enquiries>For General Enquiries</Enquiries>
+              {<img src = {FBLogo} alt = "FBLogo" width = {100} height = {100}/>}
+                <Enquiries>General Enquiries</Enquiries>
                 <ReachOut>Send us a message</ReachOut>
                 <Link>Facebook</Link>
               </Col>
@@ -98,8 +98,8 @@ const Enquiries= styled.div`
   font-family: 'Roboto';
   font-size: 1.5em;
   text-align: center;
-  font-color: #3e3e3e;
-  padding: 1rem;
+  color: #3e3e3e;
+  padding: 1.5rem;
 `
 const ReachOut= styled.div`
   font-family: 'Montserrat';

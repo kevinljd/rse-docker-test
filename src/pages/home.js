@@ -26,7 +26,7 @@ class Home extends Component {
         <div className='theProblem'>
           <MainHeadings className='afterLine' style={{color: '#535353'}}>The Problem</MainHeadings>
           <Row>
-            <Col md={4} style={{color: '#535353', padding: '50px'}}>
+            <Col md={4} style={{color: '#535353', padding: '20px' }}>
               <MethodLogo src={logo1}/>
               <h3>Employer Expectations</h3>
               <ProblemDescription>
@@ -35,7 +35,7 @@ class Home extends Component {
                 the gap between the classroom and the workplace is widening!
               </ProblemDescription>
             </Col>
-            <Col md={4} style={{color: '#535353', padding: '50px'}}>
+            <Col md={4} style={{color: '#535353', padding: '20px'}}>
               <MethodLogo src={logo2}/>
               <h3>Automation and Globalisation</h3>
               <ProblemDescription>
@@ -44,7 +44,7 @@ class Home extends Component {
                  literate workforce to cope with this inevitable reality.
               </ProblemDescription>
             </Col>
-            <Col md={4} style={{color: '#535353', padding: '50px'}}>
+            <Col md={4} style={{color: '#535353', padding: '20px'}}>
               <MethodLogo src={logo3}/>
               <h3>Education Model</h3>
               <ProblemDescription>
@@ -156,7 +156,7 @@ const MainHeadings = styled.h1`
   margin-top: 150px;
   word-spacing: 4px;
   letter-spacing: 1px;
-  font-weight: 300;
+  font-weight: bold;
 `;
 
 const SolutionP = styled.p`

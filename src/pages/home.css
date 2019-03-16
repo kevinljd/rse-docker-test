@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-    background-image: url(../img/home/img/Landing6.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0 ), rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(../img/home/img/Landing6.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -25,12 +25,13 @@ body {
 }
 
 .theProblem {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/home/img/ProblemimageNew.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 1 ), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/home/img/ProblemimageNew.png);
     background-size: cover;
     background-position: center;
     text-align: center;
     height: 100vh;
-    padding-top: 10px;
+    padding-top: -10px;
+    margin-top: -10px;
 }
 
 .theProblem .cols {
