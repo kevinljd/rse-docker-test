@@ -70,3 +70,47 @@
     position: absolute;
     transform: translateX(120px) translateY(0px)
 }
+
+@media only screen and (max-width: 1200px) {
+    .firstCircleInFront {
+        display: none;
+    }
+
+    .secondCircleInFront {
+        display: none;
+    }
+
+    .verticalLine {
+        transform: translateX(90px) translateY(0px)
+    }
+
+    .colImg {
+        transform: translateX(0px) translateY(0px);
+    }
+}
+
+
+@media only screen and (max-width: 575px) {
+    .firstRectangularShadow {
+        box-shadow: 0 0 #fedbb0;
+        height: 15rem;
+        width: auto;
+        transform: translateX(-20px) translateY(10px)
+
+    }
+
+    .secondRectangularShadow {
+        box-shadow: 0 0 #fedbb0;
+        height: 15rem;
+        width:auto;
+        transform: translateX(-20px) translateY(10px)
+    }
+
+    .responsiveCenter {
+        text-align: center;
+    }
+
+    .verticalLine {
+        display: none;
+    }
+}
