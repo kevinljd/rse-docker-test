@@ -17,8 +17,8 @@ class NavBar extends Component {
           <li><Link to='/programs'>Programs</Link></li>
           <li><Link to='/team'>Our Teams</Link></li>
           <li><Link to='/contact'>Contact us</Link></li>
-          <li className={'two'}>Login</li>
-          <li className={'two'}>Sign Up</li>
+          {/*<li className={'two'}>Login</li>*/}
+          {/*<li className={'two'}>Sign Up</li>*/}
         </ul>
       </nav>
     )
