@@ -9,6 +9,7 @@ import Footer from "../components/footer"
 import Meeting from "../img/programs/img/DSC_0457.JPG" 
 import Audience from "../img/programs/img/DSE_6807.jpg"
 import VR from "../img/programs/img/Technical Workshops 2-49.jpg"
+import {Link} from "react-router-dom";
 require('typeface-montserrat')
 require('typeface-montserrat-alternates')
 require('typeface-roboto')
@@ -31,10 +32,12 @@ class Programs extends Component {
                 <img src = {Meeting} alt = "Meeting" width = '100%' height = 'auto'/>
               </Col>
               <Col style={{padding: '0'}} sm={4}>
-                <ColorBox bgColor='#FF9000'>
-                  <BigWord>STEM LEADERS</BigWord> 
-                  <SmallWord>PROGRAM</SmallWord>
-                </ColorBox>
+                <Link to='/stem-leaders-program'>
+                  <ColorBox bgColor='#FF9000'>
+                    <BigWord>STEM LEADERS</BigWord>
+                    <SmallWord>PROGRAM</SmallWord>
+                  </ColorBox>
+                </Link>
                 <img src = {Audience} alt = "Audience" width = '100%' height = 'auto'/>
               </Col>
               <Col style={{padding: '0'}} sm={4}>
