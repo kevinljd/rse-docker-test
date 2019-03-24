@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 //  import { ImageBackground, Text, View, StyleSheet } from 'react-native'
 import { Row, Col } from 'react-grid-system'
+import { Link } from 'react-router-dom'
 
 import NavBar from "../components/navbar"
 import Footer from "../components/footer"
@@ -9,7 +10,6 @@ import Footer from "../components/footer"
 import Meeting from "../img/programs/img/DSC_0457.JPG" 
 import Audience from "../img/programs/img/DSE_6807.jpg"
 import VR from "../img/programs/img/Technical Workshops 2-49.jpg"
-import {Link} from "react-router-dom";
 require('typeface-montserrat')
 require('typeface-montserrat-alternates')
 require('typeface-roboto')
@@ -25,23 +25,21 @@ class Programs extends Component {
 
             <Row>
               <Col style={{padding: '0'}} sm={4}>
-                <ColorBox bgColor='#10ccff'>
+                <ColorBox bgColor='#FFA252'>
                   <BigWord>RECRUITMENT</BigWord> 
                   <SmallWord>ENRICHMENT PROGRAM</SmallWord>
                 </ColorBox>
                 <img src = {Meeting} alt = "Meeting" width = '100%' height = 'auto'/>
               </Col>
               <Col style={{padding: '0'}} sm={4}>
-                <Link to='/stem-leaders-program'>
-                  <ColorBox bgColor='#FF9000'>
-                    <BigWord>STEM LEADERS</BigWord>
-                    <SmallWord>PROGRAM</SmallWord>
-                  </ColorBox>
-                </Link>
-                <img src = {Audience} alt = "Audience" width = '100%' height = 'auto'/>
+                <ColorBox bgColor='#73C4FF'>
+                  <BigWord><Link to='/stem-leaders-program'>STEM LEADERS</Link></BigWord> 
+                  <SmallWord><Link to='/stem-leaders-program'>PROGRAM</Link></SmallWord>
+                </ColorBox>
+                <Link to='/stem-leaders-program'><img src = {Audience} alt = "Audience" width = '100%' height = 'auto'/></Link>
               </Col>
               <Col style={{padding: '0'}} sm={4}>
-                <ColorBox bgColor='#3e3e3e'>
+                <ColorBox bgColor='#505050'>
                   <BigWord>FUTURE</BigWord> 
                   <SmallWord>TECHNOLOGIES PROGRAM</SmallWord>
                 </ColorBox>
