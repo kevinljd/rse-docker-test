@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 //  import { ImageBackground, Text, View, StyleSheet } from 'react-native'
 import { Row, Col } from 'react-grid-system'
+import { Link } from 'react-router-dom'
 
 import NavBar from "../components/navbar"
 import Footer from "../components/footer"
@@ -24,21 +25,21 @@ class Programs extends Component {
 
             <Row>
               <Col style={{padding: '0'}} sm={4}>
-                <ColorBox bgColor='#10ccff'>
+                <ColorBox bgColor='#FFA252'>
                   <BigWord>RECRUITMENT</BigWord> 
                   <SmallWord>ENRICHMENT PROGRAM</SmallWord>
                 </ColorBox>
                 <img src = {Meeting} alt = "Meeting" width = '100%' height = 'auto'/>
               </Col>
               <Col style={{padding: '0'}} sm={4}>
-                <ColorBox bgColor='#FF9000'>
-                  <BigWord>STEM LEADERS</BigWord> 
-                  <SmallWord>PROGRAM</SmallWord>
+                <ColorBox bgColor='#73C4FF'>
+                  <BigWord><Link to='/stem-leaders-program'>STEM LEADERS</Link></BigWord> 
+                  <SmallWord><Link to='/stem-leaders-program'>PROGRAM</Link></SmallWord>
                 </ColorBox>
-                <img src = {Audience} alt = "Audience" width = '100%' height = 'auto'/>
+                <Link to='/stem-leaders-program'><img src = {Audience} alt = "Audience" width = '100%' height = 'auto'/></Link>
               </Col>
               <Col style={{padding: '0'}} sm={4}>
-                <ColorBox bgColor='#3e3e3e'>
+                <ColorBox bgColor='#505050'>
                   <BigWord>FUTURE</BigWord> 
                   <SmallWord>TECHNOLOGIES PROGRAM</SmallWord>
                 </ColorBox>

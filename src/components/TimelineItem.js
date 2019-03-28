@@ -8,16 +8,15 @@ const TimelineItem = props => {
     <Row style={{margin: '1rem 0rem'}}>
       <Col sm={12} lg={1}/>
       <Col sm={12} lg={7}>
-          <h3>{props.title}</h3>
-          <p style ={{fontSize: '15px'}}>{props.body}</p>
-        </Col>
+        <h3>{props.title}</h3>
+        <p style ={{fontSize: '15px'}}>{props.body}</p>
+      </Col>
       <Col sm={12} lg={3}>
         <Icon src={props.circle.src} alt={props.circle.alt} />
       </Col>
-      
+
 
       <Col sm={12} lg={1}/>
-  
     </Row>
   )
 }
@@ -30,7 +29,6 @@ const Photo = styled.img`
   @media (max-width: 800px) {
     display: none;
   } 
-
 `
 
 const Icon = styled.img`

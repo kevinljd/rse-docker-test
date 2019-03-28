@@ -70,7 +70,7 @@ class StemLeadersProgram extends Component {
         <br/><br/><br/>
 
            <Container>
-            <Row>
+            <Row className={'responsiveCenter'}>
               <Col sm={7} >
                   <Text style ={{fontFamily: 'Montserrat', fontSize: 20, color: 'black'}}>
                   Students ourselves, we have been through this chicken and egg dilemma: <br/> <br/>
