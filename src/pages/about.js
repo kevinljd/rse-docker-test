@@ -37,74 +37,57 @@ class About extends Component {
         <NavBar/>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         <Background img={Cover}>
-          <h1 className={"aboutus"} style={{fontSize:'5em', padding:'0', color: 'white'}}>About Us</h1>
+          <h1 className={"aboutus"} style={{fontSize:'3em', padding:'0', color: 'white'}}>About Us</h1>
         </Background>
         <Container>
           <h1 className={"title"} style={{borderBottom: '2px solid black'}}>Values</h1>
           <Row>
             <Col sm={12} lg={3} className={"text"}>
-              <img src={Gift} alt={"present"} width={200} height={200} className={"image"}/>
+              <img src={Gift} alt={"present"} width={100} height={100} className={"image"}/>
               <Letter>G</Letter>
               <Heading>Give Before Taking</Heading>
-              <p style={{color:'#333333', font:'Roboto', fontFamily:'sans-serif'}}>Your true worth is determined by
+              <p style={{color:'#333333', font:'Roboto', fontFamily:'sans-serif'}}>
+                  Your true worth is determined by
                   how much you give in value than
-                  you take in payment. <br/>
-                  This may sound like a recipe for
-                  bankruptcy. But think again! Giving
-                  is not a zero sum game. Remember
-                  that no one has ever become poor
-                  by giving, in fact generosity builds
-                  success.The more you give, the
-                  more you have. You feel
-                  empowered, capable, proud and
-                  overall great! <br/><br/>
-                  At RSE we believe the same, and
-                  look to create a community of
+                  you take in payment. 
+                  <br/><br/>
+                  We look to create a community of
                   sharing and giving.
                   Generosity builds success.</p>
             </Col>
             <Col sm={12} lg={3} className={"text"}>
-              <img src={Inspire} alt={"light bulb"} width={200} height={200} className={"image"}/>
+              <img src={Inspire} alt={"light bulb"} width={100} height={100} className={"image"}/>
               <Letter>I</Letter>
               <Heading>Inspire Others To Succeed</Heading>
-              <p style={{color:'#333333', font:'Roboto', fontFamily:'sans-serif'}}>“Average people raise the bar on
-                themselves;<br/>
-                Good people raise the bar for
-                others;<br/>
-                Great people inspire others to
-                raise their own bar”<br/><br/>
-                Simply understanding the
-                importance of inspiration and making a conscious effort to
-                inspire is often all it takes to make
-                a tremendous difference for
-                others. When we look to develop
-                ourselves to become our very
-                best, we should also look to raise
-                those around us - we aspire to make a difference by supporting
+              <p style={{color:'#333333', font:'Roboto', fontFamily:'sans-serif'}}>
+                When we look to develop ourselves to become our best, we should also look to raise
+                those around us. 
+                <br/><br/>
+                We aspire to make a difference by supporting
                 those in our community to
                 achieve their goals.</p>
             </Col>
             <Col sm={12} lg={3} className={"text"}>
-              <img src={Fail} alt={"X"} width={200} height={200} className="image"/>
+              <img src={Fail} alt={"X"} width={100} height={100} className="image"/>
               <Letter>F</Letter>
               <Heading>Fail, But Only Once</Heading>
                   <p style={{color:'#333333', font:'Roboto', fontFamily:'sans-serif'}}>Instead of fearing failure,
                   embrace it. But from each
                   failure, learn what went
                   wrong and aim to do it
-                  better the next time. At RSE,
-                  we believe that every failure
+                  better the next time. 
+                  We believe that every failure
                   is an invaluable learning
                   experience which brings
                   you closer to success.</p>
             </Col>
             <Col sm={12} lg={3} className={"text"}>
-              <img src={Icecream} alt={"icecream"} width={200} height={200} className={"image"}/>
+              <img src={Icecream} alt={"icecream"} width={100} height={100} className={"image"}/>
               <Letter>T</Letter>
               <Heading>Try All the Flavours of the Icecream</Heading>
                 <p style={{color:'#333333', font:'Roboto', fontFamily:'sans-serif'}}>Try as many things as you
                 can and work out what
-                drives you. RSE provides
+                drives you. We provide
                 both staff and students
                 with opportunities they
                 wouldn't have otherwise,
@@ -115,7 +98,7 @@ class About extends Component {
         </Container>
         <Overlay img={Divider}/>
         <Legacy style={{backgroundColor:'#333333', textAlign:'center', color:'white'}}>
-          <h1 className={"title"} style={{borderBottom: '2px solid white', margin: '4rem 4rem', color:'white'}}>Our Legacy</h1>
+          <h1 className={"title"} style={{borderBottom: '2px solid white', margin: '1rem rem', color:'white'}}>Our Legacy</h1>
         <div>
         { timelineData.map(data => <TimelineItem {...data} />) }
         </div>
@@ -127,13 +110,13 @@ class About extends Component {
 export default About
 
 const Background = styled.div`
-  padding: 10rem 0;
-  margin: 0 auto;
-  height: 100vh;
+  padding: 12rem 0;
+  margin: 0 0;
+  height: 130%;
   width: 100%;
   background-image: url(${props => props.img});
   background-color: white;
-  background-size: 100% 100%;
+  background-size: 100% auto; 
   background-position: center;
 
   @media (max-width: 800px) {
@@ -143,20 +126,18 @@ const Background = styled.div`
 `
 
 const Overlay = styled.div`
-  height: 10rem;
+  height: 5rem;
   background-image: url(${props => props.img});
   background-color: white;
   background-size: 100% 100%;
 `
 
 const Container = styled.div`
-  padding: 5rem 10rem;
+  padding: 2rem 8rem;
 `
-const Padding = styled.div`
-  padding: 5em 0em 5em;
-`
+
 const Legacy = styled.div`
-  padding: 10em 0em 8em;
+  padding: 1em 4em 10em;
   font-family: 'Roboto', sans-serif;
 `
 

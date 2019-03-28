@@ -17,7 +17,6 @@ const TimelineItem = props => {
 
 
       <Col sm={12} lg={1}/>
-
     </Row>
   )
 }
@@ -26,6 +25,7 @@ const Photo = styled.img`
   border: 10px solid white;
   transform: translate(30px, -30px);
   width: 10rem;
+
   @media (max-width: 800px) {
     display: none;
   } 
