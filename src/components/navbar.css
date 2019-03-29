@@ -16,44 +16,117 @@ nav img {
     float: left;
     margin-left: 30px;
     margin-top: 9px;
+    margin-right: 90px;
 }
 
-ul {
-    list-style-type: none;
+.mainNav {
     margin: 0;
-    padding: 10px;
     overflow: hidden;
     background-color: #333333;
     font-family: 'Roboto', 'Hind', sans-serif;
     font-size: 1.2rem;
 }
 
+.mainNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: none;
+}
 
-li {
+
+.mainNav li {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    padding: 28px 1rem;
     float: left;
 }
 
-li:first-child {
-    padding-left: 90px;
-}
+/*.mainNav li:first-child {*/
+/*    padding-left: 90px;*/
+/*}*/
 
-.two {
-    float: right;
-    border: 1px solid white;
-    border-radius: 200px;
-    padding: 7px 15px;
-    margin: 7px 10px;
-}
+/*.two {*/
+/*    float: right;*/
+/*    border: 1px solid white;*/
+/*    border-radius: 200px;*/
+/*    padding: 7px 15px;*/
+/*    margin: 7px 10px;*/
+/*}*/
 
 a {
     text-decoration: none;
     color: white;
 }
+
+.nav-content {
+    position: absolute;
+    overflow: hidden;
+    top: 80px;
+    transform: translateX(-1px);
+    background-color: #c9c9c9;
+}
+
+.nav-sub {
+    position: relative;
+}
+
+.nav-sub ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-sub a {
+    display: block;
+    padding: 5px 0;
+}
+
+.dropdown li {
+    float: none;
+    display: none;
+    padding: 10px;
+    position: relative;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
+    text-align: left;
+}
+
+.dropdown li a {
+    color: #333333;
+}
+
+.odd-link {
+    background-color: #e3e3e3;
+}
+
+
+
+.mainNav li:hover {
+    background-color: #575757;
+}
+
+.mainNav li:hover .nav-sub {
+    width: 250px;
+    height: auto;
+    /*word-wrap: break-word;*/
+}
+
+.mainNav li:hover .dropdown li {
+    display:block;
+    /*word-wrap: break-word;*/
+}
+
+.mainNav li:hover .dropdown li:hover {
+    background-color: white;
+}
+
+.dropdown li a:hover {
+    /*background-color: green;*/
+    /*font-size: 10px;*/
+}
+
 
 
 
