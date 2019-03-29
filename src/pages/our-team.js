@@ -12,6 +12,16 @@ import Will from '../img/our-team/img/William.jpg';
 import Andrew from '../img/our-team/img/Andrew.jpg';
 import Ray from '../img/our-team/img/Raymond.jpg';
 import RaySu from '../img/our-team/img/Ray.jpg';
+import David from '../img/our-team/img/David.jpg';
+import Samir from '../img/our-team/img/Samir.jpg';
+import Justis from '../img/our-team/img/Justis.jpg';
+import Jason from '../img/our-team/img/jason.jpg';
+import Matt from '../img/our-team/img/matthew.jpg';
+import Alvin from '../img/our-team/img/alvin.jpg';
+import Steven from '../img/our-team/img/steven.jpg';
+import Viv from '../img/our-team/img/vivian.jpg';
+import Theon from '../img/our-team/img/theon.jpg';
+
 
 
 class ourTeam extends Component {
@@ -68,11 +78,95 @@ class ourTeam extends Component {
         <div className={'theTeam'}>
           <Row>
             <Col md={{ span: 4, offset: 4 }}>
-              <img src={RaySu} className={'team-photos'} style={{marginTop: '170px'}}/>
+              <img src={RaySu} className={'pres-photos'} style={{marginTop: '170px'}}/>
               <TeamNames>Raymond Su</TeamNames>
               <TeamCaption>President</TeamCaption>
             </Col>
           </Row>
+          <Row>
+            <Col>
+            </Col>
+            <Col>
+              <img src={Samir} className={'pres-photos'} style={{marginTop: '100px'}}/>
+              <TeamNames>Samir Mustavi</TeamNames>
+              <TeamCaption>VP of Services</TeamCaption>
+            </Col>
+            <Col>
+            </Col>
+            <Col>
+              <img src={David} className={'pres-photos'} style={{marginTop: '100px'}}/>
+              <TeamNames>David Luong</TeamNames>
+              <TeamCaption style={{marginBottom: '150px'}}>VP of Operations</TeamCaption>
+            </Col>
+            <Col>
+            </Col>
+            <Col>
+            </Col>
+            <Col>
+            </Col>
+          </Row>
+          <Row>
+            <Col style={{padding: '0'}}>
+              <div className={'blueBG'}>
+                <DivisionHeadings>Marketing</DivisionHeadings>
+                <img src={Justis} className={'manager-photos'}/>
+                <TeamNames>Justis Nguyen</TeamNames>
+                <ManagerCaption>Marketing Manager</ManagerCaption>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'orangeBG'}>
+                <DivisionHeadings>Partnerships</DivisionHeadings>
+                <img src={Jason} className={'manager-photos'}/>
+                <TeamNames>Jason Quek</TeamNames>
+                <ManagerCaption>Partnerships Manager</ManagerCaption>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'blueBG'}>
+                <DivisionHeadings>Events</DivisionHeadings>
+                <img src={Matt} className={'manager-photos'}/>
+                <TeamNames>Matthew Lim</TeamNames>
+                <ManagerCaption>Events Manager</ManagerCaption>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'orangeBG'}>
+                <DivisionHeadings>EPUP</DivisionHeadings>
+                <img src={Alvin} className={'manager-photos'}/>
+                <TeamNames>Alvin Ong</TeamNames>
+                <ManagerCaption>EPUP Manager</ManagerCaption>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'blueBG'}>
+                <DivisionHeadings>Programs</DivisionHeadings>
+                <img src={Steven} className={'manager-photos'}/>
+                <TeamNames>Steven Huynh</TeamNames>
+                <ManagerCaption>Programs Manager</ManagerCaption>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'orangeBG'}>
+                <DivisionHeadings>HR</DivisionHeadings>
+                <img src={Viv} className={'manager-photos'}/>
+                <TeamNames>Vivian Lai</TeamNames>
+                <ManagerCaption>HR Manager</ManagerCaption>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'blueBG'}>
+                <DivisionHeadings>Dev</DivisionHeadings>
+                <img src={Theon} className={'manager-photos'}/>
+                <TeamNames>Theon Ho</TeamNames>
+                <ManagerCaption>Dev Manager</ManagerCaption>
+              </div>
+            </Col>
+          </Row>
+
+
+
+
         </div>
         <Footer/>
       </div>
@@ -94,6 +188,14 @@ const SubHeadings = styled.h1`
   margin: 0;
   color: white;
   font-size: 2rem;
+`;
+
+const DivisionHeadings = styled.h1`
+  margin: 10px 0;
+  padding-top: 40px;
+  color: #353535;
+  font-size: 1.5rem;
+  font-style: bold;
 `;
 
 const BodNames = styled.p`
@@ -127,6 +229,15 @@ const TeamNames = styled.p`
 
 const TeamCaption = styled.p`
   padding: 0.5rem;
+  margin: 0;
+  color: black;
+  font-size: 1rem;
+  font-style: italic;
+`;
+
+const ManagerCaption = styled.p`
+  padding: 0.5rem;
+  padding-bottom: 3rem;
   margin: 0;
   color: black;
   font-size: 1rem;

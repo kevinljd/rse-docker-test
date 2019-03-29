@@ -39,9 +39,26 @@
 }
 
 .theTeam {
-    height: 100vh;
+    height: 1000vh;
     text-align: center;
     font-family: 'Roboto', 'Lato', 'Arial', sans-serif;
+}
+
+
+.pres-photos {
+    border-radius: 100%;
+    border: 4px solid #fd9025;
+    width: 8rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.manager-photos {
+    border-radius: 100%;
+    border: 4px solid #0c618c;
+    width: 8rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
 .team-photos {
@@ -50,4 +67,22 @@
     width: 8rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
+}
+
+.cols {
+    padding: 0;
+}
+
+.blueBG {
+    background-color: #d5f6fe;
+    border-top: 2px solid #074c6e;
+    border-left: 1px solid #074c6e;
+    border-right: 1px solid #074c6e;
+}
+
+.orangeBG {
+    background-color: #fdcb91;
+    border-top: 2px solid #074c6e;
+    border-left: 1px solid #074c6e;
+    border-right: 1px solid #074c6e;
 }
