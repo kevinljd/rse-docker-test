@@ -28,6 +28,30 @@ import Linda from '../img/our-team/img/linda.jpg';
 import Jordan from '../img/our-team/img/jordan.jpg';
 import Lilian from '../img/our-team/img/lilian.jpg';
 import Victoria from '../img/our-team/img/vic.jpg';
+import Brandon from '../img/our-team/img/Brandon.jpg';
+import Daniel from '../img/our-team/img/daniel.jpg';
+import Jem from '../img/our-team/img/jemima.jpg';
+import Russ from '../img/our-team/img/russel.jpg';
+import Mariya from '../img/our-team/img/mariya.jpg';
+import Nevin from '../img/our-team/img/nevin.jpg';
+import Steph from '../img/our-team/img/steph.jpg';
+import Kevin from '../img/our-team/img/kevin.jpg';
+import Lay from '../img/our-team/img/laymond.jpg';
+import Shehan from '../img/our-team/img/shehan.jpg';
+import Denise from '../img/our-team/img/denise.jpg';
+import May from '../img/our-team/img/may.jpg';
+import Tony from '../img/our-team/img/tony.jpg';
+import Nic from '../img/our-team/img/nicholas.jpg';
+import RayZ from '../img/our-team/img/raymondz.jpg';
+import KevinL from '../img/our-team/img/kevinlim.jpg';
+import Felix from '../img/our-team/img/felix.jpg';
+import Kath from '../img/our-team/img/kath.jpg';
+import Wassim from '../img/our-team/img/waasim.jpg';
+import Chong from '../img/our-team/img/chong.jpg';
+import Hayden from '../img/our-team/img/hayden.jpg';
+import Celine from '../img/our-team/img/celine.jpg';
+
+
 
 
 
@@ -181,7 +205,7 @@ class ourTeam extends Component {
             </Col>
             <Col style={{padding: '0'}}>
               <div className={'greyBG'}>
-                <img src={Alex} className={'manager-photos'}/>
+                <img src={Alex} className={'team-photos'}/>
                 <TeamMemberNames>Alex Southern</TeamMemberNames>
               </div>
             </Col>
@@ -193,27 +217,211 @@ class ourTeam extends Component {
               </div>
             </Col>
             <Col style={{padding: '0'}}>
-              <div className={'greyBG'} style={{backgroundColor: 'white'}}>
-                <img src={Linda} className={'manager-photos'}/>
-                <TeamMemberNames>Linda Kor</TeamMemberNames>
+              <div className={'greyBG'} style={{backgroundColor: 'white', borderBottom: '2px solid #074c6e'}}>
+                <img src={Linda} className={'team-photos'}/>
+                <TeamMemberNames style={{paddingBottom: '3.6rem'}}>Linda Kor</TeamMemberNames>
               </div>
             </Col>
             <Col style={{padding: '0'}}>
               <div className={'greyBG'} style={{backgroundColor: 'white'}}>
-                <img src={Jordan} className={'manager-photos'}/>
+                <img src={Jordan} className={'team-photos'}/>
                 <TeamMemberNames>Jordan Roberts</TeamMemberNames>
               </div>
             </Col>
             <Col style={{padding: '0'}}>
               <div className={'greyBG'}>
-                <img src={Lilian} className={'manager-photos'}/>
+                <img src={Lilian} className={'team-photos'}/>
                 <TeamMemberNames>Lilian Wang</TeamMemberNames>
               </div>
             </Col>
             <Col style={{padding: '0'}}>
               <div className={'greyBG'} style={{backgroundColor: 'white'}}>
-                <img src={Victoria} className={'manager-photos'}/>
+                <img src={Victoria} className={'team-photos'}/>
                 <TeamMemberNames>Victoria Xu</TeamMemberNames>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'} style={{backgroundColor: 'white'}}>
+                <img src={Brandon} className={'team-photos'}/>
+                <TeamMemberNames>Brandon Nguyen</TeamMemberNames>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'}>
+                <img src={Daniel} className={'team-photos'}/>
+                <TeamMemberNames>Daniel Ding</TeamMemberNames>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'}>
+                <img src={Jem} className={'team-photos'}/>
+                <TeamMemberNames>Jemima Siddiqui</TeamMemberNames>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'} style={{backgroundColor: 'white'}}>
+                <img src={Russ} className={'team-photos'}/>
+                <TeamMemberNames>Russel Yango</TeamMemberNames>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'}>
+                <img src={Mariya} className={'team-photos'}/>
+                <TeamMemberNames>Mariya Schmalko</TeamMemberNames>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'} style={{backgroundColor: 'white'}}>
+                <img src={Nevin} className={'team-photos'}/>
+                <TeamMemberNames>Nevin Prakash</TeamMemberNames>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'} style={{backgroundColor: 'white'}}>
+                <img src={Steph} className={'team-photos'}/>
+                <TeamMemberNames>Stephanie Kumar</TeamMemberNames>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'}>
+                <img src={Kevin} className={'team-photos'}/>
+                <TeamMemberNames>Kevin Chung</TeamMemberNames>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'}>
+                <img src={Lay} className={'team-photos'}/>
+                <TeamMemberNames>Laymond Chu</TeamMemberNames>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'} style={{backgroundColor: 'white', borderBottom: '2px solid #074c6e'}}>
+                <img src={Shehan} className={'team-photos'}/>
+                <TeamMemberNames style={{paddingBottom: '3.6rem'}}>Shehan Wijetunga</TeamMemberNames>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'} style={{borderBottom: '2px solid #074c6e'}}>
+                <img src={Denise} className={'team-photos'}/>
+                <TeamMemberNames style={{paddingBottom: '3.6rem'}}>Denise Chan</TeamMemberNames>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'} style={{backgroundColor: 'white'}}>
+                <img src={May} className={'team-photos'}/>
+                <TeamMemberNames>May Chew</TeamMemberNames>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'} style={{backgroundColor: 'white'}}>
+                <img src={Tony} className={'team-photos'}/>
+                <TeamMemberNames>Tony Yang</TeamMemberNames>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'} style={{borderBottom: '2px solid #074c6e'}}>
+                <img src={Nic} className={'team-photos'}/>
+                <TeamMemberNames style={{paddingBottom: '3.6rem'}}>Nicholas Thumiger</TeamMemberNames>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'} style={{borderBottom: '2px solid #074c6e'}}>
+                <img src={RayZ} className={'team-photos'}/>
+                <TeamMemberNames style={{paddingBottom: '3.6rem'}}>Raymond Zhang</TeamMemberNames>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+            </Col>
+            <Col style={{padding: '0'}}>
+            </Col>
+            <Col style={{padding: '0'}}>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'} style={{backgroundColor: 'white'}}>
+                <img src={KevinL} className={'team-photos'}/>
+                <TeamMemberNames>Kevin Lim</TeamMemberNames>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'} style={{backgroundColor: 'white'}}>
+                <img src={Felix} className={'team-photos'}/>
+                <TeamMemberNames>Felix Xie</TeamMemberNames>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+            </Col>
+            <Col style={{padding: '0'}}>
+            </Col>
+            <Col style={{padding: '0'}}>
+            </Col>
+            <Col style={{padding: '0'}}>
+            </Col>
+            <Col style={{padding: '0'}}>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'} style={{backgroundColor: 'white'}}>
+                <img src={Kath} className={'team-photos'}/>
+                <TeamMemberNames>Kath-Lin Han</TeamMemberNames>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'} style={{backgroundColor: 'white'}}>
+                <img src={Wassim} className={'team-photos'}/>
+                <TeamMemberNames style={{fontSize: '1.2rem'}}>Wassim Kheireddine</TeamMemberNames>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+            </Col>
+            <Col style={{padding: '0'}}>
+            </Col>
+            <Col style={{padding: '0'}}>
+            </Col>
+            <Col style={{padding: '0'}}>
+            </Col>
+            <Col style={{padding: '0'}}>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'} style={{backgroundColor: 'white'}}>
+                <img src={Chong} className={'team-photos'}/>
+                <TeamMemberNames>Chong Chang</TeamMemberNames>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'} style={{backgroundColor: 'white', borderBottom: '2px solid #074c6e'}}>
+                <img src={Hayden} className={'team-photos'}/>
+                <TeamMemberNames>Hayden Ou</TeamMemberNames>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+            </Col>
+            <Col style={{padding: '0'}}>
+            </Col>
+            <Col style={{padding: '0'}}>
+            </Col>
+            <Col style={{padding: '0'}}>
+            </Col>
+            <Col style={{padding: '0'}}>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'} style={{backgroundColor: 'white', borderBottom: '2px solid #074c6e'}}>
+                <img src={Celine} className={'team-photos'}/>
+                <TeamMemberNames>Celine Ho</TeamMemberNames>
               </div>
             </Col>
           </Row>
