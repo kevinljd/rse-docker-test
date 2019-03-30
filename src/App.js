@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import Home from './pages/home';
 import About from './pages/about';
 import Contact from "./pages/contact";
+import Partners from "./pages/partner";
 import Programs from "./pages/programs";
 import StemLeadersProgram from "./pages/stem-leaders-program";
 import NavBar from "./components/navbar";
@@ -20,6 +21,7 @@ class App extends Component {
           <Route exact path='/programs' component={Programs} />
           <Route exact path='/stem-leaders-program' component={StemLeadersProgram} />          
           <Route exact path='/nav' component={NavBar} />
+          <Route exact path='/partners' component={Partners} />
           <Route exact path='/footer' component={Footer} />
           <Route exact path='/*' component={Home} />
         </Switch>

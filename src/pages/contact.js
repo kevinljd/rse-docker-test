@@ -115,7 +115,6 @@ const Link= styled.div`
   font-weight: bold;
   text-align: center;
   color: #a1a1a1;
-
 `
 const LinePadding= styled.div`
   padding: 1rem;
@@ -124,4 +123,3 @@ const LinePadding= styled.div`
 const Padding= styled.div`
   padding: 10rem;
 `
-
