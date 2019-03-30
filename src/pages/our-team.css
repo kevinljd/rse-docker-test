@@ -1,14 +1,17 @@
-.header {
+.our-team-header {
     background-image: linear-gradient(rgba(0, 0, 0, 0 ), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("../img/our-team/img/DSE_7185 DarkGradient.png");
     background-size: cover;
     background-position: center;
     height: 40vh;
+    text-align: center;
+    padding-top: 30px;
     padding-bottom: 300px;
+    font-family: 'Roboto', 'Lato', 'Arial', sans-serif;
 }
 
 .bod-advisers {
     background-color: black;
-    height: 200vh;
+    height: 170vh;
     text-align: center;
     font-family: 'Roboto', 'Lato', 'Arial', sans-serif;
 }
@@ -83,6 +86,12 @@
 .orangeBG {
     background-color: #fdcb91;
     border-top: 2px solid #074c6e;
+    border-left: 1px solid #074c6e;
+    border-right: 1px solid #074c6e;
+}
+
+.greyBG {
+    background-color: #e2e2e2;
     border-left: 1px solid #074c6e;
     border-right: 1px solid #074c6e;
 }

@@ -21,6 +21,14 @@ import Alvin from '../img/our-team/img/alvin.jpg';
 import Steven from '../img/our-team/img/steven.jpg';
 import Viv from '../img/our-team/img/vivian.jpg';
 import Theon from '../img/our-team/img/theon.jpg';
+import Rick from '../img/our-team/img/ricky.jpg';
+import Alex from '../img/our-team/img/alex.jpg';
+import Nubia from '../img/our-team/img/nubia.jpg';
+import Linda from '../img/our-team/img/linda.jpg';
+import Jordan from '../img/our-team/img/jordan.jpg';
+import Lilian from '../img/our-team/img/lilian.jpg';
+import Victoria from '../img/our-team/img/vic.jpg';
+
 
 
 
@@ -29,7 +37,7 @@ class ourTeam extends Component {
     return (
       <div>
         <NavBar/>
-        <div className={'header'}>
+        <div className={'our-team-header'}>
           <MainHeadings>Our Team</MainHeadings>
         </div>
         <div className={'bod-advisers'}>
@@ -163,6 +171,52 @@ class ourTeam extends Component {
               </div>
             </Col>
           </Row>
+          <Row>
+            <Col style={{padding: '0'}}>
+              <div className={'blueBG'} style={{borderTop: 0}}>
+                <img src={Rick} className={'manager-photos'}/>
+                <TeamNames>Ricky Chen</TeamNames>
+                <ManagerCaption>Marketing Manager</ManagerCaption>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'}>
+                <img src={Alex} className={'manager-photos'}/>
+                <TeamMemberNames>Alex Southern</TeamMemberNames>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'blueBG'} style={{borderTop: 0}}>
+                <img src={Nubia} className={'manager-photos'}/>
+                <TeamNames>Nubia Mendes</TeamNames>
+                <ManagerCaption>Events Manager</ManagerCaption>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'} style={{backgroundColor: 'white'}}>
+                <img src={Linda} className={'manager-photos'}/>
+                <TeamMemberNames>Linda Kor</TeamMemberNames>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'} style={{backgroundColor: 'white'}}>
+                <img src={Jordan} className={'manager-photos'}/>
+                <TeamMemberNames>Jordan Roberts</TeamMemberNames>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'}>
+                <img src={Lilian} className={'manager-photos'}/>
+                <TeamMemberNames>Lilian Wang</TeamMemberNames>
+              </div>
+            </Col>
+            <Col style={{padding: '0'}}>
+              <div className={'greyBG'} style={{backgroundColor: 'white'}}>
+                <img src={Victoria} className={'manager-photos'}/>
+                <TeamMemberNames>Victoria Xu</TeamMemberNames>
+              </div>
+            </Col>
+          </Row>
 
 
 
@@ -227,6 +281,14 @@ const TeamNames = styled.p`
   font-size: 1.3rem;
 `;
 
+const TeamMemberNames = styled.p`
+  padding: 0;
+  padding-bottom: 3.7rem;
+  margin: 0;
+  color: black;
+  font-size: 1.3rem;
+`;
+
 const TeamCaption = styled.p`
   padding: 0.5rem;
   margin: 0;
@@ -237,7 +299,7 @@ const TeamCaption = styled.p`
 
 const ManagerCaption = styled.p`
   padding: 0.5rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   margin: 0;
   color: black;
   font-size: 1rem;
