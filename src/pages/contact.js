@@ -21,8 +21,8 @@ class Contact extends Component {
       <body>
         <NavBar/>
 
-        <ImageBackground source = {require('../img/contact-us/img/RSEcrop.jpg')} style={{height:800}}>
-          <Text style = {{marginTop: 400}}>
+        <ImageBackground source = {require('../img/contact-us/img/RSEcrop.jpg')} style={{height: '90vh'}}>
+          <Text style = {{marginTop: 300}}>
             <ImageTextBold>Got any further enquiries?</ImageTextBold>
             <ImageText>Talk to us.</ImageText>
           </Text>

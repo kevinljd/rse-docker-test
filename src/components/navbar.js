@@ -18,9 +18,9 @@ class NavBar extends Component {
             <div className={"nav-content"}>
               <div className={"nav-sub"}>
                 <ul className={"dropdown"}>
-                  <li><Link to='/stem-leaders-program'>Recruitment Enrichment Program</Link></li>
+                  {/*<li><Link to='/stem-leaders-program'>Recruitment Enrichment Program</Link></li>*/}
                   <li className={'odd-link'}><Link to='/stem-leaders-program'>STEM Leaders Program</Link></li>
-                  <li><Link to='/stem-leaders-program'>Future Technologies Program</Link></li>
+                  {/*<li><Link to='/stem-leaders-program'>Future Technologies Program</Link></li>*/}
                 </ul>
               </div>
             </div>
