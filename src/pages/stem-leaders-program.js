@@ -387,7 +387,7 @@ class StemLeadersProgram extends Component {
                 className = {'programWorkshopBG'}
               >
                 <Image source={Molecule} style={{width: '30%', height: 'auto'}}/>
-                <Text style ={{fontFamily: 'Montserrat', fontSize: 20, align: 'center',  color: 'black'}} className={'programWorkshopText'}>Networking</Text>
+                <Text style ={{fontFamily: 'Montserrat', fontWeight: 'bold',fontSize: 20, align: 'center',  color: 'black'}} className={'programWorkshopText'}>Networking</Text>
               </ImageBackground>
             </Col>
             <Col align = 'center' sm={3} className={'programWorkshopCols'}>
@@ -405,7 +405,7 @@ class StemLeadersProgram extends Component {
                 }}
                 className={'programWorkshopBG'}
               >
-              <Text style ={{fontFamily: 'Montserrat', fontSize: 20, align: 'center',  color: 'black'}} className={'programWorkshopText'}>Project Management</Text>
+              <Text style ={{fontFamily: 'Montserrat', fontWeight: 'bold',fontSize: 20, align: 'center',  color: 'black'}} className={'programWorkshopText'}>Project Management</Text>
               </ImageBackground>
             </Col>
             <Col align = 'center' sm={3} className={'programWorkshopCols'}>
@@ -423,7 +423,7 @@ class StemLeadersProgram extends Component {
                 }}
                 className={'programWorkshopBG'}
               >
-              <Text style ={{fontFamily: 'Montserrat', fontSize: 20, align: 'center',  color: 'black'}} className={'programWorkshopText'}>Emotional Intelligence</Text>
+              <Text style ={{fontFamily: 'Montserrat', fontWeight: 'bold', fontSize: 20, align: 'center',  color: 'black'}} className={'programWorkshopText'}>Emotional Intelligence</Text>
               </ImageBackground>
             </Col>
             <Col align = 'center' sm={3} className={'programWorkshopCols'}>
@@ -441,7 +441,7 @@ class StemLeadersProgram extends Component {
                 }}
                 className={'programWorkshopBG'}
               >
-              <Text style ={{fontFamily: 'Montserrat', fontSize: 20, align: 'center',  color: 'black'}} className={'programWorkshopText'}>Critical Thinking</Text>
+              <Text style ={{fontFamily: 'Montserrat', fontWeight: 'bold',fontSize: 20, align: 'center',  color: 'black'}} className={'programWorkshopText'}>Critical Thinking</Text>
               </ImageBackground>
             </Col>
         </Row>

@@ -103,10 +103,10 @@ const Enquiries= styled.div`
 `
 const ReachOut= styled.div`
   font-family: 'Montserrat';
-  font-weight: 100;
+  font-weight: 500;
   font-size: 1em;
   text-align: center;
-  color: #3e3e3e;
+  color: #2c2c2c;
   padding: 0.5rem;
 `
 const Link= styled.div`
