@@ -47,26 +47,28 @@ import Wattblock from "../img/programs/img/partners/wattblock-logo.png"
 
 import './stem-leaders-program.css';
 
-require('typeface-montserrat')
-require('typeface-montserrat-alternates')
-require('typeface-roboto')
+require('typeface-montserrat');
+require('typeface-montserrat-alternates');
+require('typeface-roboto');
 
 class StemLeadersProgram extends Component {
   render() {
     return (
       <body>
         <NavBar/>
-
-        <ImageBackground source = {require('../img/programs/img/DSE_6807.jpg')} 
-          style={{height:350, opacity: 0.9}}>
-          {/* , {backgroundColor:'rgba(0,0,0,.6)',
-                 height:350,width:1140} */}
-        <Text style = {{marginTop: 75}}>
-          <StemBold>STEM LEADERS</StemBold>
+        <div className={'programs-header'}>
+          <StemBold style = {{paddingTop: 100}}>STEM LEADERS</StemBold>
           <Stem>PROGRAM</Stem>
-        </Text>
-        </ImageBackground>
-
+        </div>
+        {/*<ImageBackground source = {require('../img/programs/img/DSE_6807.jpg')} */}
+        {/*  style={{height:350, opacity: 0.9}}>*/}
+        {/*  /!* , {backgroundColor:'rgba(0,0,0,.6)',*/}
+        {/*         height:350,width:1140} *!/*/}
+        {/*<Text style = {{marginTop: 75}}>*/}
+        {/*  <StemBold>STEM LEADERS</StemBold>*/}
+        {/*  <Stem>PROGRAM</Stem>*/}
+        {/*</Text>*/}
+        {/*</ImageBackground>*/}
         <br/><br/><br/>
 
            <Container>
@@ -544,14 +546,14 @@ export default StemLeadersProgram
 
 const StemBold = styled.div`
     font-family: Montserrat;
-    font-size: 6em;
+    font-size: 4.5em;
     font-weight: bold;
     color: white;
     text-align: center;
 `
 const Stem = styled.div`
     font-family: Montserrat;
-    font-size: 6em;
+    font-size: 4.5em;
     color: white;
     text-align: center;
 `
