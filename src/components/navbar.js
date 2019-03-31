@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 // import styled  from 'styled-components';
 import './navbar.css';
 import mainLogo from '../img/home/img/logo.png';
@@ -25,7 +25,7 @@ class NavBar extends Component {
               </div>
             </div>
           </li>
-          <li><Link to='/team'>Our Teams</Link></li>
+          {/*<li><Link to='/team'>Our Teams</Link></li>*/}
           <li><Link to='/contact'>Contact us</Link></li>
           {/*<li className={'two'}>Login</li>*/}
           {/*<li className={'two'}>Sign Up</li>*/}

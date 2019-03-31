@@ -27,6 +27,7 @@ import Presentation from "../img/about/slp cover.jpg"
 import RSEteam from "../img/about/DSE_7185.jpg"
 import SLPSummer18 from "../img/about/RSEN-87.jpg"
 import Raise from "../img/about/Ideation-63.jpg"
+import Footer from "../components/footer";
 
 
 
@@ -120,6 +121,7 @@ class About extends Component {
         { timelineData.map(data => <TimelineItem {...data} />) }
         </div>
         </Legacy>
+        <Footer/>
       </div>
     )
   }

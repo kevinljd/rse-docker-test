@@ -5,8 +5,8 @@ import { Container, Row, Col } from 'react-grid-system'
 import NavBar from "../components/navbar"
 import Footer from "../components/footer"
 
-import Girl from "../img/programs/img/girl.JPG" 
-import Talk from "../img/programs/img/talk.JPG" 
+import Girl from "../img/programs/resized/girl.png"
+import Talk from "../img/programs/resized/talk.png"
 
 import PeopleStat from "../img/programs/img/stats1.png" 
 import PieChart from "../img/programs/img/stats2.png" 
@@ -16,10 +16,10 @@ import Molecule from "../img/programs/img/network-3 copy.png"
 import Wrench from "../img/programs/img/maintenance copy.png"
 import Presentation from "../img/programs/img/recruitment-2231 copy.png"
 
-import Lanyard from "../img/programs/img/lanyards.JPG" 
-import TableMeeting from "../img/programs/img/tablemeeting.JPG" 
-import TableSmiling from "../img/programs/img/tablesmiling.png" 
-import Lecture from "../img/programs/img/lecture.jpg" 
+import Lanyard from "../img/programs/resized/lanyards.png"
+import TableMeeting from "../img/programs/resized/tablemeeting.png"
+import TableSmiling from "../img/programs/resized/tablesmiling.png"
+import Lecture from "../img/programs/resized/lecture.png"
 
 
 import Mac from "../img/programs/img/recruitment321312 copy.png"
@@ -134,7 +134,7 @@ class StemLeadersProgram extends Component {
             <Col align='center' sm={3}>
               <Text style ={{fontFamily: 'Montserrat', fontSize: 90,fontWeight: 'bold', color: '#007DBA'}}>10+</Text>
               <br/>
-              <Text style ={{fontFamily: 'Montserrat', fontSize: 20, color: 'black'}}>Industry Partner for our STEM Leaders</Text>
+              <Text style ={{fontFamily: 'Montserrat', fontSize: 20, color: 'black'}}>Industry Partners for our STEM Leaders</Text>
             </Col>
             <Col align='center' sm={3}>
               <Text style ={{fontFamily: 'Montserrat', fontSize: 40,fontWeight: 'bold', color: 'black'}}>9 out of 10</Text>
@@ -337,20 +337,22 @@ class StemLeadersProgram extends Component {
             </Row>
             <br/><br/><br/>
             <Row>
-            <Col sm={7} >
+            <Col sm={12} style={{textAlign: 'center', padding: '50px 0'}} >
                 <Text style ={{fontFamily: 'Montserrat', fontSize: 40, fontWeight: 'bold', color: 'black'}}>PROGRAM WORKSHOP</Text>
-             </Col>
+            </Col>
           </Row>
 
           <br/>
           <Row align="center">
             <Col sm={2}>
             </Col>
-            <Col style={{padding: '0'}} sm={2}>
-                <img src = {Mac} alt = "Mac" width = '50%' height = '50%'/>
+            <Col sm={1}>
             </Col>
+            {/*<Col style={{padding: '0'}} sm={2}>*/}
+            {/*    /!*<img src = {Mac} alt = "Mac" width = '50%' height = '50%'/>*!/*/}
+            {/*</Col>*/}
             <Col style={{padding: '0'}} sm={2}>
-                <img src = {Briefcase} alt = "Briefcase" width = '50%' height = '50%'/>
+                <img src = {Briefcase} alt = "Briefcase" width = '50%' height = '50%' style={{position: 'relative', left: '17px'}}/>
             </Col>
               <Col style={{padding: '0'}} sm={4}>
               <Text style ={{fontFamily: 'Montserrat', fontSize: 20, color: 'black'}}>Our professional modules
@@ -360,9 +362,11 @@ class StemLeadersProgram extends Component {
           <Row>
             <Col sm={2}>
             </Col>
-            <Col style={{padding: '0'}} sm={2}>
-                <Text style ={{fontFamily: 'Montserrat', fontSize: 20, fontWeight: 'bold', align: 'center',  color: 'black'}}>Technical</Text>
+            <Col sm={1}>
             </Col>
+            {/*<Col style={{padding: '0'}} sm={2}>*/}
+            {/*    <Text style ={{fontFamily: 'Montserrat', fontSize: 20, fontWeight: 'bold', align: 'center',  color: 'black'}}>Technical</Text>*/}
+            {/*</Col>*/}
             <Col style={{padding: '0'}}sm={2}>
                 <Text style ={{fontFamily: 'Montserrat', fontSize: 20, fontWeight: 'bold', align: 'center', color: 'black'}}>Professional</Text>
             </Col>
