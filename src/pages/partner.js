@@ -49,14 +49,17 @@ class Home extends Component {
         <NavBar/>
         <Container>
           <PartnerSlider slides={slideContent}/>
-          <Headings>Our Partners</Headings>
+          <div className={'heading'}>
+            <h1 style={{textIndent: '0'}}>1</h1>
+            <Headings>Our Partners</Headings>
+          </div>
           <BodyOne>The 4th wave of industrialisation will change every facet of work. By 2030 it is predicted that 50 percent of employees will require
             high-level programming, coding and software design skills, the jobs of the future will also demand 70% more enterprise skills.</BodyOne>
           <BodyOne>University education still employs 20th century teaching methods and content, severely lagging behind to what is required today. With the need to identify talented individuals amongst thousands of candidates, traditional recruitment methods are struggling to accurately identify the attributes and traits needed to succeed in the future</BodyOne>
-          <QuestionOne>How will your business react to the technologies massive displacement of workers and new opportunities?</QuestionOne>
-          <QuestionOne>Is your business ready for the new work reality?</QuestionOne>
+          <QuestionOne style={{fontWeight: 'bold'}}>How will your business react to the technologies massive displacement of workers and new opportunities?</QuestionOne>
+          <QuestionOne style={{fontWeight: 'bold'}}>Is your business ready for the new work reality?</QuestionOne>
           <BodyOne>Real skills education provides dynamic alternative to your current solution. We look to bridge the growing divide between what industry demands and what education provides. We achieve this through our 3 step solution:</BodyOne>
-          <ThreeSolution>Exposure, Upskill and Connect.</ThreeSolution>
+          <ThreeSolution style={{color:'#007DBA', fontWeight: 'bold'}}>Exposure, Upskill and Connect.</ThreeSolution>
           <BodyOne>Through this process, we develop talented students who have:</BodyOne>
 
           <div>
@@ -130,14 +133,16 @@ class Home extends Component {
                   <BenefitParagraph>
                     Over <strong style={{color:'#FF3500'}}>50</strong> talented students have
                     been recruited into intern/graduate
-                    positions directly from our
+                    positions <strong style={{color:'#FF3500'}}>directly</strong> from our
                     programs.
                   </BenefitParagraph>
                 </div>
               </Col>
             </Row>
           </div>
-          <img src={partners} style={{display: 'block', margin: '3rem auto'}}/>
+          <div style={{borderBottom: '1px solid #bdbdbd', height: '10px', paddingTop: '6rem'}}>
+          </div>
+          <img src={partners} style={{display: 'block', margin: '3rem auto', width: 'auto', height: '400px'}}/>
         </Container>
         <Footer/>
       </div>
@@ -207,37 +212,39 @@ const SolutionP = styled.p`
 `;
 
 const Headings = styled.h1`
-  display: inline-block;
+  display: block;
   color: #007DBA;
   word-spacing: 4px;
   letter-spacing: 1px;
-  font-weight: 300;
+  font-weight: bold;
+  font-family: 'Roboto', 'Lato', 'Arial', sans-serif;
+  text-indent: 0;
 `;
 
 const BodyOne = styled.p`
   color: #838383;
-  font-family: "Roboto";
+  font-family: 'Roboto', 'Lato', 'Arial', sans-serif;
 `;
 
 const QuestionOne = styled.p`
   color: Orange;
-  font-family: "Roboto";
+  font-family: 'Roboto', 'Lato', 'Arial', sans-serif;
 `;
 
 const ThreeSolution = styled.p`
   color: #535353;
-  font-family: 'Roboto';
+  font-family: 'Roboto', 'Lato', 'Arial', sans-serif;
 `;
 
 const ThreeHeading = styled.h3`
   text-align:center;
   background-color: transparent;
   margin-bottom: 1px;
-  font-family: 'Roboto'; 
+  font-family: 'Roboto', 'Lato', 'Arial', sans-serif;
 `;
 
 const BenefitParagraph = styled.p`
   color: #838383;
   font-size: 1rem;
   text-align: center;
-`
+`;
