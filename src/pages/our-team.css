@@ -1,0 +1,97 @@
+.our-team-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0 ), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("../img/our-team/img/DSE_7185 DarkGradient.png");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 300px;
+    font-family: 'Roboto', 'Lato', 'Arial', sans-serif;
+}
+
+.bod-advisers {
+    background-color: black;
+    height: 170vh;
+    text-align: center;
+    font-family: 'Roboto', 'Lato', 'Arial', sans-serif;
+}
+
+.bod {
+    padding-top: 180px;
+}
+
+.advisors {
+    padding-top: 140px;
+}
+
+.bod-photos {
+    border-radius: 100%;
+    border: 4px solid white;
+    width: 10rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+
+.sub-bod-photos {
+    border-radius: 100%;
+    border: 4px solid white;
+    width: 8rem;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}
+
+.theTeam {
+    height: auto;
+    text-align: center;
+    font-family: 'Roboto', 'Lato', 'Arial', sans-serif;
+}
+
+
+.pres-photos {
+    border-radius: 100%;
+    border: 4px solid #fd9025;
+    width: 8rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.manager-photos {
+    border-radius: 100%;
+    border: 4px solid #0c618c;
+    width: 8rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.team-photos {
+    border-radius: 100%;
+    border: 4px solid black;
+    width: 8rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.cols {
+    padding: 0;
+}
+
+.blueBG {
+    background-color: #d5f6fe;
+    border-top: 2px solid #074c6e;
+    border-left: 1px solid #074c6e;
+    border-right: 1px solid #074c6e;
+}
+
+.orangeBG {
+    background-color: #fdcb91;
+    border-top: 2px solid #074c6e;
+    border-left: 1px solid #074c6e;
+    border-right: 1px solid #074c6e;
+}
+
+.greyBG {
+    background-color: #e2e2e2;
+    border-left: 1px solid #074c6e;
+    border-right: 1px solid #074c6e;
+}
