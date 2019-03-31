@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom'
 import NavBar from "../components/navbar"
 import Footer from "../components/footer"
 
-import Meeting from "../img/programs/img/DSC_0457.JPG" 
-import Audience from "../img/programs/img/DSE_6807.jpg"
+import Meeting from "../img/programs/resized/DSC_0457.png"
+import Audience from "../img/programs/resized/DSE_6807.png"
 import VR from "../img/programs/img/Technical Workshops 2-49.jpg"
 require('typeface-montserrat')
 require('typeface-montserrat-alternates')

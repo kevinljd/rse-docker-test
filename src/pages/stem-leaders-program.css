@@ -8,6 +8,10 @@
     opacity: 1000;
 }
 
+.center {
+    text-align: center;
+}
+
 .firstCircleInFront {
     height: 40%;
     width: 28%;

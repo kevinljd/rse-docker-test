@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 // import styled  from 'styled-components';
 import './navbar.css';
 import mainLogo from '../img/home/img/logo.png';
@@ -18,14 +18,14 @@ class NavBar extends Component {
             <div className={"nav-content"}>
               <div className={"nav-sub"}>
                 <ul className={"dropdown"}>
-                  <li><Link to='/stem-leaders-program'>Recruitment Enrichment Program</Link></li>
+                  {/*<li><Link to='/stem-leaders-program'>Recruitment Enrichment Program</Link></li>*/}
                   <li className={'odd-link'}><Link to='/stem-leaders-program'>STEM Leaders Program</Link></li>
-                  <li><Link to='/stem-leaders-program'>Future Technologies Program</Link></li>
+                  {/*<li><Link to='/stem-leaders-program'>Future Technologies Program</Link></li>*/}
                 </ul>
               </div>
             </div>
           </li>
-          <li><Link to='/team'>Our Teams</Link></li>
+          {/*<li><Link to='/team'>Our Teams</Link></li>*/}
           <li><Link to='/contact'>Contact us</Link></li>
           {/*<li className={'two'}>Login</li>*/}
           {/*<li className={'two'}>Sign Up</li>*/}
