@@ -5,4 +5,7 @@ COPY ./ ./rse-web
 WORKDIR /rse-web
 RUN npm install
 
+
+EXPOSE 80
+
 CMD ["npm", "start"]
