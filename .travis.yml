@@ -5,8 +5,8 @@ services:
 before_install:
   - docker build -t kevinljd/rse-web
 
-script:
-  - docker run kevinljd/rse-web
+# script:
+#   - docker run kevinljd/rse-web
 
 
 deploy:
